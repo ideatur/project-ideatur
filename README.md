@@ -1,10 +1,9 @@
 <h1>project-ideatur</h1>
-Educational front-end project for IT-Step school and friends
 
 **Список гілок (branches)**<br>
 >git branch
 >
->**Переключитись в іншу гілку (branch)**<br>
+**Переключитись в іншу гілку (branch)**<br>
 >git chechkout <branchname><br>
 >
 **Створити собі гілку для роботи**<br>
