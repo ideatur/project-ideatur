@@ -1,7 +1,7 @@
 ># project-ideatur
 >Educational front-end project for IT-Step school and friends
 >
->Список гілок (branches)
+>Список гілок (branches)<br>
 >git branch
 >
 >Переключитись в іншу гілку (branch)
