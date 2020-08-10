@@ -1,5 +1,4 @@
 <h1>Ideatur</h1>
-
 **Список гілок (branches)**<br>
 >git branch
 >
@@ -28,5 +27,5 @@
 >git checkout <своя гілка><br>
 >git merge UI # мерж UI собі в гілку<br>
 >
-**<h2>Макет</h2>**
+**<h4>Макет</h4>**
 >**https://www.figma.com/file/LEIaTmkMYzQiL9sy26Ca1e/IdeaTour?node-id=1%3A535**
