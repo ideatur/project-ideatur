@@ -1,4 +1,4 @@
-<h1>project-ideatur</h1>
+<h1>Ideatur</h1>
 
 **Список гілок (branches)**<br>
 >git branch
