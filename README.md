@@ -28,5 +28,5 @@
 >git checkout <своя гілка><br>
 >git merge UI # мерж UI собі в гілку<br>
 >
-**<h2>Макет</h2>**<br>
+**<h2>Макет</h2>**
 >**https://www.figma.com/file/LEIaTmkMYzQiL9sy26Ca1e/IdeaTour?node-id=1%3A535**
