@@ -1,6 +1,6 @@
 import * as $ from 'jquery'
 
-function createAnalytics(): object {
+function createAnalytics(): object { // test
   let counter = 0
   let destroyed: boolean = false
 
