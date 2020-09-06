@@ -1,0 +1,129 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Header -->
+<header>
+<div class="header">
+    <div class="header-burger">
+        <img src="{{ STATIC_PREFIX }}img/LogoIdeaTour.svg" alt="logo image" class="logo"/>
+        <a href="#" class="burger-button">
+            <span></span>
+        </a>
+    </div>
+    <ul class="first-ul">
+        <li><a href="#">Усі тури</a></li>
+        <li><a href="#">Гарячі тури</a></li>
+        <li><a href="#">Блог</a></li>
+        <li><a href="#">Інформація</a></li>
+    </ul>
+    <span class="header-contacts">
+        <p>з 9:00 до 22:00 щодня</p>
+        <p class="phone-number">0 800 500 505</p>
+    </span>
+    <ul class="second-ul">
+        <li>укр</li>
+        <li><i class="far fa-heart"></i></li>
+        <li><i class="far fa-user"></i></li>
+    </ul>
+</div>
+</header>
+<!-- Main -->
+<main>
+<div class="main-form">
+    <h1 class="form-title">Топ-10 найкращих сімейних готелів Єгипту →</h1>
+    <form class="search-hotel">
+        <div class="form-wrapper">
+            <div class="form-div">
+                <label>Країна, місто, готель</label>
+                <input type="text" name="country" placeholder="Туреччина">
+            </div>
+            <div class="form-div">
+                <label>Місто вильоту</label>
+                <input type="text" name="country" placeholder="">
+            </div>
+            <div class="form-div">
+                <label>Дата вильоту</label>
+                <input type="date" name="country" value="2020-01-01"
+                        max="2030-01-01" min="2020-01-01" class="form-date">
+            </div>
+            <div class="form-div">
+            <label>Кількість ночей</label>
+                <input type="text" name="country" placeholder="">
+            </div>
+
+            <div class="form-div">
+                <label>Кількість осіб</label>
+                <input type="text" name="country" placeholder="">
+            </div>
+        </div>
+        <div class="row form-buttons">
+            <button class="btn-danger">Розширений пошук</button>
+            <button class="btn-success">Знайти тури</button>
+        </div>
+    </form>
+</div>
+</main>
+<!-- Footer -->
+<footer>
+<div class="footer">
+    <div class="footer-left-side">
+        <div class="footer-container-ul">
+        <h6>Тури</h6>
+            <ul class="footer-ul-one">
+                <li>авіа тури</li>
+                <li>гарячі тури</li>
+                <li>автобусні тури</li>
+            </ul>
+        </div>
+        <div class="footer-container-ul">
+        <h6>Інформація</h6>
+            <ul class="footer-ul-two">
+                <li>як це працює</li>
+                <li>правова інформація</li>
+                <li>запитання відповіді</li>
+                <li>користувацька угода</li>
+            </ul>
+        </div>
+        <div class="footer-container-ul">
+        <h6>Про нас</h6>
+            <ul className="footer-ul-three">
+                <li>про нас</li>
+                <li>блог</li>
+                <li>контакти</li>
+            </ul>
+        </div>
+    </div>
+    <div class="foter-right-side">
+        <div class="footer-right-upper">
+            <div class="footer-contacts-part-one">
+                <div class="footer-phone">
+                    <h5 class="phone-number">0 800 500 505</h5>
+                    <p>з 9:00 до 22:00 щодня</p>
+                    <div class="foter-social">
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-telegram-plane"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-contacts-part-two">
+                <h5>рівне вул. соборна 67</h5>
+                <p>Пн-Пт з 10:00 до 19:00</p>
+                <p>Сб з 11:00 до 15:00</p>
+                <p>ideatur@ukr.net</p>
+            </div>
+        </div>
+
+        <div class="footer-right-down">
+            <input type="text" value="email">
+            <button>підписатись</button>
+        </div>
+    </div>
+    <div class="footer-logo">
+        <img src="{{ STATIC_PREFIX }}img/LogoIdeaTour.svg" alt="logo image"/>
+    </div>
+</div>
+</footer>
+{% endblock %}
