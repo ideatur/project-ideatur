@@ -1,0 +1,51 @@
+@font-face {
+	font-family: 'Futura Demi';
+	src: url('../fonts/FuturaDemiC.eot');
+	src: url('../fonts/FuturaDemiC.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/FuturaDemiC.woff') format('woff'),
+		url('../fonts/FuturaDemiC.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Futura Light';
+	src: url('../fonts/FuturaLightC.eot');
+	src: url('../fonts/FuturaLightC.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/FuturaLightC.woff') format('woff'),
+		url('../fonts/FuturaLightC.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Futura Medium';
+	src: url('../fonts/FuturaMediumC.eot');
+	src: url('../fonts/FuturaMediumC.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/FuturaMediumC.woff') format('woff'),
+		url('../fonts/FuturaMediumC.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Futura Normal';
+	src: url('../fonts/FuturaNormal.eot');
+	src: url('../fonts/FuturaNormal.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/FuturaNormal.woff') format('woff'),
+		url('../fonts/FuturaNormal.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Philosopher';
+	src: url('../fonts/Philosopher.eot');
+	src: url('../fonts/Philosopher.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Philosopher.woff') format('woff'),
+		url('../fonts/Philosopher.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+// vars
+$font-futura-demi: 'Futura Demi';
+$font-futura-light: 'Futura Light';
+$font-futura-medium: 'Futura Medium';
+$font-futura-normal: 'Futura Normal';
+$font-philosopher: 'Philosopher';
