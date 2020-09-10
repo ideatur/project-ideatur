@@ -1,83 +1,102 @@
 .footer {
     display: flex;
-    width: 100%;
     height: auto;
-    padding: 25px 0px;
+    padding: 25px 75px;
     background-color: #5E6181;
-    color: white;
-}
-.footer-left-side {
-    display: flex;
-    width: 47%;
-    height: auto;
-}
-.footer-ul-one, .footer-ul-two, .footer-ul-three{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-.footer-container-ul {
-    margin: 0 auto;
-}
-.foter-right-side {
-    display: block;
-    width: 35%;
-    height: auto;
-}
-.footer-right-upper {
-    display: flex;
-    justify-content: space-between;
-}
-.footer-contacts-part-one {
-    display: flex;
-}
-.footer-contacts-part-two {
-    display: block;
-}
-.foter-social {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-}
-.foter-social i {
-    font-size: 25px;
-}
-.foter-social img{
-    color: white;
-}
-.footer-right-down input{
-    background-color: rgba(0, 0, 0, 0);
-    color: #BDBDBD;
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    border-bottom: solid 0.5px #BDBDBD;
-    width: 60%;
-}
-.footer-right-down button{
-    background-color: rgba(0, 0, 0, 0);
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 13px;
-    letter-spacing: 0.1em;
-    text-transform: lowercase;
-    color: #BDBDBD;
-    border: 0.5px solid #BDBDBD;
-    padding: 5px 10px;
-}
-.footer-logo {
-    display: flex;
-    width: 15%;
-    padding: 0;
-    margin-left: 25px;
-}
-.footer p {
-    @include font(12px, $font-futura-light, white, 300);
-}
-.footer-addres {
-    @include font(18px, $font-futura-medium, white, 500);
-    text-transform: uppercase;
-}
-.footer-email {
-    @include font(18px, $font-futura-medium, white, 500); 
+    color: $primary-color_10;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .footer-container-ul{
+        padding-left: 0px;
+    }
+    h6 {
+        font-family: $font-futura-medium;
+        color: $primary-color_10;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+    .footer-left-side {
+        display: flex;
+    }
+    .footer-left-side a {
+        font-family: $font-futura-light;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 13px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $primary-color_10;
+        cursor: pointer;
+    }
+    .footer-left-side a:hover{
+        text-decoration: none;
+        color: $primary-color_10;
+    }
+    .footer-right-upper {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-contacts-part-one {
+        display: flex;
+    }
+    .footer-contacts-part-two {
+        display: block;
+    }
+    .foter-social {
+        display: flex;
+        justify-content: space-between;
+    }
+    i {
+        font-size: 25px;
+    }
+    .foter-social img{
+        color: $primary-color_10;
+    }
+    .footer-right-down input{
+        
+        margin-right: -1px;
+    }
+    .footer-right-down input{
+        background-color: $primary-color-crystal-clear;
+        color: $primary-color_4;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-bottom: solid 0.5px $primary-color_4;
+        margin-right: -4px;
+        margin-left: 30px;
+        font-family: $font-futura-light;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 13px;
+        letter-spacing: 0.1em;
+        text-transform: lowercase;
+        padding: 4px 130px 0px 4px;
+    }
+    .footer-right-down input:focus {
+        outline: none
+    }
+    .footer-logo {
+        cursor: pointer;
+        display: flex;
+        padding: 0;
+        margin-left: 25px;
+    }
+    p {
+        @include font(12px, $font-futura-light, $primary-color_10, 300);
+        line-height: 13px;
+    }
+    .footer-addres {
+        @include font(18px, $font-futura-medium, $primary-color_10, 500);
+        text-transform: uppercase;
+    }
+    .footer-email {
+        @include font(18px, $font-futura-medium, $primary-color_10, 500); 
+    }
 }

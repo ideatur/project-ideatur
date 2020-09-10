@@ -1,36 +1,37 @@
 {% load static %}
 <footer>
-    <div class="footer">
-        <div class="footer-left-side">
-            <div class="footer-container-ul">
-            <h6>Тури</h6>
+    <div class="footer col-12">
+        <div class="footer-left-side col-5">
+            <div class="footer-container-ul col-4">
+                <h6>Тури</h6>
                 <ul class="footer-ul-one">
-                    <li>авіа тури</li>
-                    <li>гарячі тури</li>
-                    <li>автобусні тури</li>
+                    <li><a href="#">авіа тури</a></li>
+                    <li><a href="#">гарячі тури</a></li>
+                    <li><a href="#">автобусні тури</a></li>
                 </ul>
-            </div>
-            <div class="footer-container-ul">
-            <h6>Інформація</h6>
+                </div>
+            <div class="footer-container-ul col-4">
+                <h6>Інформація</h6>
                 <ul class="footer-ul-two">
-                    <li>як це працює</li>
-                    <li>правова інформація</li>
-                    <li>запитання відповіді</li>
-                    <li>користувацька угода</li>
+                    <li><a href="#">як це працює</a></li>
+                    <li><a href="#">правова інформація</a></li>
+                    <li><a href="#">запитання відповіді</a></li>
+                    <li><a href="#">користувацька угода</a></li>
                 </ul>
             </div>
-            <div class="footer-container-ul">
-            <h6>Про нас</h6>
+            <div class="footer-container-ul col-4">
+                <h6>Про нас</h6>
                 <ul className="footer-ul-three">
-                    <li>про нас</li>
-                    <li>блог</li>
-                    <li>контакти</li>
+                    <li><a href="#">про нас</a></li>
+                    <li><a href="#">блог</a></li>
+                    <li><a href="#">контакти</a></li>
                 </ul>
             </div>
         </div>
-        <div class="foter-right-side">
-            <div class="footer-right-upper">
-                <div class="footer-contacts-part-one">
+
+        <div class="foter-right-side col-7">
+            <div class="footer-right-upper col-12">
+                <div class="footer-contacts-part-one col-4">
                     <div class="footer-phone">
                         <h5 class="phone-number">0 800 500 505</h5>
                         <p>з 9:00 до 22:00 щодня</p>
@@ -42,20 +43,22 @@
                     </div>
                 </div>
     
-                <div class="footer-contacts-part-two">
+                <div class="footer-contacts-part-two col-5">
                     <p class="footer-addres">рівне вул. соборна 67</p>
                     <p>Пн-Пт з 10:00 до 19:00</p>
                     <p>Сб з 11:00 до 15:00</p>
-                    <p class="footer-email">ideatur@ukr.net</p>
+                    <p class="footer-email">ideatour@ukr.net</p>
+                </div>
+                <div class="footer-logo col-3">
+                    <img src="{{ STATIC_PREFIX }}img/LogoIdeaTour.svg" alt="logo image"/>
                 </div>
             </div>
             <div class="footer-right-down">
                 <input type="text" value="email">
-                <button>підписатись</button>
+                <button class="footer-button-main-style-two">підписатись</button>
             </div>
+            
         </div>
-        <div class="footer-logo">
-            <img src="{{ STATIC_PREFIX }}img/LogoIdeaTour.svg" alt="logo image"/>
-        </div>
+        
     </div>
 </footer>

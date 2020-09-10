@@ -1,95 +1,98 @@
 .header {
-    background-color: rgba(0,0,0,0);
-    width: 100%;
+    display: flex;
+    background-color: $primary-color-crystal-clear;
     height: 76px;
-    color: white;
-    display: flex;
-    align-items: center;
-    padding: 0px 25px 0px 15px;
     position: relative;
-}
-.header-burger {
-    display: flex;
-    width: 18%;
-}
-.burger-button {
-    display: flex;
-    width: 50px;
-    height: 50px;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-}
-.burger-button span,
-.burger-button span::before,
-.burger-button span::after {
-    position: absolute;
-    top: 50%; 
-    margin-bottom: -1px; 
-    left: 50%; 
-    margin-left: -12.5px; 
-    width: 25px;
-    height: 1px;
-    background-color: white;
-}
-.burger-button span::before,
-.burger-button span::after {
-    content: '';
-    display: block;
-}
-.burger-button span::before {
-    transform: translateY(-7px);
-}
-.burger-button span::after {
-    transform: translateY(5px);
-}
-.logo {
-    width: 80px;
-    height: 50px;
-    cursor: pointer;
-}
-.header ul {
-    list-style-type: none;
-    height: 32px;
-    padding: 0;
-    margin: 0;
-}
-.header li {
-    margin: 0px 15px;
-}
-.header a {
-    text-decoration: none;
-    @include font(18px, $font-futura-light, white, normal); 
-} 
-.header i {
-    color: white;
-}
-.first-ul {
-    display: flex;
-    width: 35%;
-    justify-content: flex-end;
-    text-transform: uppercase;
-}
-.header-contacts {
-    display: flex;
-    width: 20%;
-    justify-content: flex-end;
-    align-items: center;
-    height: 30px;
-    flex-wrap: wrap;
-    padding: 0px 50px;
-}
-.header-contacts p {
-    line-height: 10px;
-    padding: 0;
-    @include font(12px, $font-futura-light, white, normal); 
-}
-.phone-number {
-    @include font(22px, $font-futura-medium, white, normal); 
-}
-.second-ul {
-    display: flex;
-    width: 27%;
-    justify-content: flex-end;
-    justify-self: flex-end;
+
+    .part-one, .part-two {
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+    .header-burger {
+        justify-content: flex-start;
+        padding: 0;
+    }
+    .burger-button {
+        display: flex;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+    .burger-button span,
+    .burger-button span::before,
+    .burger-button span::after {
+        position: absolute;
+        top: 50%; 
+        margin-bottom: -1px; 
+        left: 50%; 
+        margin-left: -12.5px; 
+        width: 25px;
+        height: 1px;
+        background-color: white;
+    }
+    .burger-button span::before,
+    .burger-button span::after {
+        content: '';
+        display: block;
+    }
+    .burger-button span::before {
+        transform: translateY(-7px);
+    }
+    .burger-button span::after {
+        transform: translateY(5px);
+    }
+    .header-logo {
+        padding: 0;
+        margin-right: 2rem;
+    }
+    .logo {
+        width: 80px;
+        height: 50px;
+        cursor: pointer;
+    }
+    ul {
+        display: flex;
+        list-style-type: none;
+        height: 32px;
+        padding: 0;
+        margin: 0;
+        text-transform: uppercase;
+        color: $primary-color_10;
+    }
+    li {
+        margin: 0px 15px;
+    }
+    a {
+        text-decoration: none;
+        @include font(18px, $font-futura-light, $primary-color_10, 300); 
+    } 
+    i {
+        color: $primary-color_10;
+    }
+    .header-contacts {
+        height: 30px;
+    }
+    .header-contacts p:nth-child(1) {
+        line-height: 10px;
+        padding: 0;
+        @include font(12px, $font-futura-light, $primary-color_10, 300); 
+    }
+    .header-contacts p:nth-child(2){
+        line-height: 10px;
+        padding: 0;
+        @include font(22px, $font-futura-medium, $primary-color_10, 500); 
+    }
+    .first-ul {
+        justify-content: flex-end;
+        a {
+            letter-spacing: 0.1em;
+            font-weight: 300;
+        }
+    }
+    .second-ul {
+        justify-content: flex-end;
+    }
 }

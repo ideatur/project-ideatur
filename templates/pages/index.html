@@ -3,39 +3,269 @@
 {% block content %}
 
 <main>
-<div class="main-form">
-    <h1 class="form-title">Топ-10 найкращих сімейних готелів Єгипту →</h1>
-    <form class="search-hotel">
-        <div class="form-wrapper">
-            <div class="form-div">
-                <label>Країна, місто, готель</label>
-                <input type="text" name="country" placeholder="Туреччина">
-            </div>
-            <div class="form-div">
-                <label>Місто вильоту</label>
-                <input type="text" name="country" placeholder="">
-            </div>
-            <div class="form-div">
-                <label>Дата вильоту</label>
-                <input type="date" name="country" value="2020-01-01"
-                        max="2030-01-01" min="2020-01-01" class="form-date">
-            </div>
-            <div class="form-div">
-            <label>Кількість ночей</label>
-                <input type="text" name="country" placeholder="">
-            </div>
+    <div class="main-form">
+        <h1 class="form-title">Топ-10 найкращих сімейних готелів Єгипту →</h1>
+        <form class="search-hotel">
+            <div class="form-wrapper">
+                <div class="form-div">
+                    <label>Країна, місто, готель</label>
+                    <input type="text" name="country" placeholder="Туреччина">
+                </div>
+                <div class="form-div">
+                    <label>Місто вильоту</label>
+                    <input type="text" name="country" placeholder="">
+                </div>
+                <div class="form-div">
+                    <label>Дата вильоту</label>
+                    <input type="date" name="country" value="2020-01-01"
+                            max="2030-01-01" min="2020-01-01" class="form-date">
+                </div>
+                <div class="form-div">
+                <label>Кількість ночей</label>
+                    <input type="text" name="country" placeholder="">
+                </div>
 
-            <div class="form-div">
-                <label>Кількість осіб</label>
-                <input type="text" name="country" placeholder="">
+                <div class="form-div">
+                    <label>Кількість осіб</label>
+                    <input type="text" name="country" placeholder="">
+                </div>
             </div>
+            <div class="row form-buttons col-12">
+                <button class="button-main-style-two">Розширений пошук</button>
+                <button class="button-main-style-one">Знайти тури</button>
+            </div>
+        </form>
+    </div>
+    <div class="hot-tours container">
+        <h2 class="hot-tour-title-big">гарячі тури</h2>
+        <p class="hot-tour-title-low">гарячі тури</p>
+        <div class="tour-nav">
+            <ul>
+                <li>популярні</li>
+                <li>туреччина</li>
+                <li>болгарія</li>
+                <li>греція</li>
+                <li>єгипет</li>
+                <li>албанія</li>
+                <li>оае</li>
+            </ul>
         </div>
-        <div class="row form-buttons">
-            <button class="btn-danger">Розширений пошук</button>
-            <button class="btn-success">Знайти тури</button>
+        <div class="container">
+            <div class="main-photo-album">
+                <div class="pic-one">
+                    <div class="album-info">
+                        <p class="album-raitings">
+                            <i class="far fa-like"></i><span class="album-raiting-like">10.0</span>
+                            <i class="far fa-star"></i><span class="album-raiting-star">5</span>
+                        </p>
+                        <p class="album-location">Туреччина, белек</p>
+                        <p class="album-tour-title">Adam&Eva Resort 5*</p>
+                        <p class="album-price">15 822</p>
+                    </div>
+                </div>
+                <div class="pic-two">
+                    <div class="album-info">
+                        <p class="album-raitings">
+                            <i class="far fa-like"></i><span class="album-raiting-like">10.0</span>
+                            <i class="far fa-star"></i><span class="album-raiting-star">5</span>
+                        </p>
+                        <p class="album-location">Туреччина, белек</p>
+                        <p class="album-tour-title">Adam&Eva Resort 5*</p>
+                        <p class="album-price">15 822</p>
+                    </div>
+                </div>
+                <div class="pic-three">
+                    <div class="album-info">
+                        <p class="album-raitings">
+                            <i class="far fa-like"></i><span class="album-raiting-like">10.0</span>
+                            <i class="far fa-star"></i><span class="album-raiting-star">5</span>
+                        </p>
+                        <p class="album-location">Туреччина, белек</p>
+                        <p class="album-tour-title">Adam&Eva Resort 5*</p>
+                        <p class="album-price">15 822</p>
+                    </div>
+                </div>
+                <div class="pic-four">
+                    <div class="album-info">
+                        <p class="album-raitings">
+                            <i class="far fa-like"></i><span class="album-raiting-like">10.0</span>
+                            <i class="far fa-star"></i><span class="album-raiting-star">5</span>
+                        </p>
+                        <p class="album-location">Туреччина, белек</p>
+                        <p class="album-tour-title">Adam&Eva Resort 5*</p>
+                        <p class="album-price">15 822</p>
+                    </div>
+                </div>
+                <div class="pic-five">
+                    <div class="album-info">
+                        <p class="album-raitings">
+                            <i class="far fa-like"></i><span class="album-raiting-like">10.0</span>
+                            <i class="far fa-star"></i><span class="album-raiting-star">5</span>
+                        </p>
+                        <p class="album-location">Туреччина, белек</p>
+                        <p class="album-tour-title">Adam&Eva Resort 5*</p>
+                        <p class="album-price">15 822</p>
+                    </div>
+                </div>
+                <div class="pic-six">
+                    <div class="album-info">
+                        <p class="album-raitings">
+                            <i class="far fa-like"></i><span class="album-raiting-like">10.0</span>
+                            <i class="far fa-star"></i><span class="album-raiting-star">5</span>
+                        </p>
+                        <p class="album-location">Туреччина, белек</p>
+                        <p class="album-tour-title">Adam&Eva Resort 5*</p>
+                        <p class="album-price">15 822</p>
+                    </div>
+                </div>
+                <div class="pic-seven">
+                    <div class="album-info">
+                        <p class="album-raitings">
+                            <i class="far fa-like"></i><span class="album-raiting-like">10.0</span>
+                            <i class="far fa-star"></i><span class="album-raiting-star">5</span>
+                        </p>
+                        <p class="album-location">Туреччина, белек</p>
+                        <p class="album-tour-title">Adam&Eva Resort 5*</p>
+                        <p class="album-price">15 822</p>
+                    </div>
+                </div>
+                <div class="pic-eight">
+                    <div class="album-info">
+                        <p class="album-raitings">
+                            <i class="far fa-like"></i><span class="album-raiting-like">10.0</span>
+                            <i class="far fa-star"></i><span class="album-raiting-star">5</span>
+                        </p>
+                        <p class="album-location">Туреччина, белек</p>
+                        <p class="album-tour-title">Adam&Eva Resort 5*</p>
+                        <p class="album-price">15 822</p>
+                    </div>
+                </div>
+            </div>
+            <button class="main-photo-button">більше турів</button>
         </div>
-    </form>
-</div>
+    </div>
+    <div class="main-statistics container">
+        <div>
+            <div class="main-stat-num">5</div>
+            <div class="main-stat-text">років на ринку туристичних послуг</div>
+        </div>
+        <div>
+            <div class="main-stat-num">32</div>
+            <div class="main-stat-text">туроператори</div>
+        </div>
+        <div>
+            <div class="main-stat-num">10</div>
+            <div class="main-stat-text">тис. задоволених туристів</div>
+        </div>
+        <div>
+            <div class="main-stat-num">45</div>
+            <div class="main-stat-text">країн світу</div>
+        </div>
+    </div>
+    <div class="contact-us-main-form-div">
+        <div class="contact-us-main-form-picture"></div>
+        <div class="contact-us-main-form-form">
+            <p class="contact-us-main-form-title">Немає часу на самостійні пошуки?</p>
+            <p>Наші менеджери зроблять це для вас бекоштовно!</p>
+            <p>Заповніть заявку на підбір туру!</p>
+            <form class="contact-us-main-form">
+                <input type="text" placeholder="Ім'я">
+                <input type="text" placeholder="Телефн">
+                <input type="text" placeholder="Спосіб комунікації">
+                <button class="countuct-us-main-form-button">підібрати тур</button>
+            </form>
+        </div>
+    </div>
+    <div class="main-blog container">
+        <h2 class="blog-title-big">гарячі тури</h2>
+        <p class="blog-title-low">гарячі тури</p>
+        <div class="blog-nav">
+            <ul>
+                <li>#цікаве про туризм</li>
+                <li>#топ рейтинг</li>
+                <li>#поради</li>
+                <li>#новини</li>
+                <li>#від туроператорів</li>
+                <li>#must visit</li>
+            </ul>
+        </div>
+        <div class="main-blog-section">
+            <section class="main-blog-section-first">
+                <article class="blog-article-one"></article>
+                <article class="blog-article-two"></article>
+                <article class="blog-article-three">
+                    <div class="blog-article-small-one">
+                        <div class="blog-article-small-img1"></div>
+                        <div class="blog-article-small-text1">
+                            <a class="blog-article-small-text1-link">Рімні - гастрономічна перлина Італії</a>
+                            <p>Топ закладів Ріміні. Відчуйте смак італійського літа. →</p>
+                        </div>
+                    </div>
+                    <div class="blog-article-small-two">
+                        <div class="blog-article-small-img2"></div>
+                        <div class="blog-article-small-text2">
+                            <a class="blog-article-small-text2-link">Топ-10 сімейних готелів Єгипту. </a>
+                            <p>Ми склали власний рейтинг найкращих готелів Шарм-ель-Шейху та Хургади. Одразу з цінами →</p>
+                        </div>
+                    </div>
+                    <div class="blog-article-small-three">
+                        <div class="blog-article-small-img3"></div>
+                        <div class="blog-article-small-text3">
+                            <a class="blog-article-small-text3-link">Найкращі пляжі Санторіні</a>
+                            <p>Топ закладів в Ріміні. Відчуйтесмак італійського літа. →</p>
+                        </div>
+                    </div>
+                    <div class="blog-article-small-social">
+                        <div class="blog-article-small-social-div-one">
+                            <p>слідкуйте за актуальними новинами туризму з нами</p>
+                            <p>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-telegram-plane"></i>
+                            </p>
+                        </div>
+                        <div class="blog-article-small-social-div-two">
+                            <button class="blog-article-small-more-news">більше новин</button>
+                        </div>
+                    </div>
+                </article>
+
+
+            </section>
+            <section class="main-blog-section-second">
+                <div id="main-blog-slider">
+                    <span id="main-blog-slider-left"><</span>
+                    <span id="main-blog-slider-right">></span>
+                </div>
+                <article class="main-blog-section-second-article">
+                    <p>ми склали власний рейтинг найкращих готелів Шарм-ель-Шейху та Хургади. Одразу з цінами →</p>
+                </article>
+            </section>
+        </div>
+    </div>
+    <div class="main-tour-partners">
+        <div class="main-tour-our-partners-left">
+            <p>наші туристичні партнери</p>
+        </div>
+        <div class="main-tour-our-partners-list">
+            ???
+        </div>
+    </div>
+    <div class="main-instagram container">
+        <div class="main-instagram">
+            <h2 class="insta-title-big">instagram</h2>
+            <p class="insta-title-low">@ideatourrivne</p>
+        </div>
+        <div class="main-instagram-album">
+            <div id="main-instagram-slider">
+                <span id="main-instagram-slider-left"><</span>
+                <span id="main-instagram-slider-right">></span>
+            </div>
+            <img src="{{ STATIC_PREFIX }}img/main-photo-album/img_gallery1.png" alt="instagram image 1" class="inst-img-1"/>
+            <img src="{{ STATIC_PREFIX }}img/main-photo-album/img_gallery2.png" alt="instagram image 2" class="inst-img-2"/>
+            <img src="{{ STATIC_PREFIX }}img/main-photo-album/img_gallery3.png" alt="instagram image 3" class="inst-img-3"/>
+        </div>
+    </div>
 </main>
 
 {% endblock %}

@@ -1,0 +1,408 @@
+@font-face {
+  font-family: 'Futura Demi';
+  src: url("/static/fonts/FuturaDemiC.eot?3f919b4c1583");
+  src: url("/static/fonts/FuturaDemiC.eot?&3f919b4c1583#iefix") format("embedded-opentype"), url("/static/fonts/FuturaDemiC.woff?3f919b4c1583") format("woff"), url("/static/fonts/FuturaDemiC.ttf?b35d75ed280c") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Futura Light';
+  src: url("/static/fonts/FuturaLightC.eot?f4cf28d2794a");
+  src: url("/static/fonts/FuturaLightC.eot?&f4cf28d2794a#iefix") format("embedded-opentype"), url("/static/fonts/FuturaLightC.woff?f4cf28d2794a") format("woff"), url("/static/fonts/FuturaLightC.ttf?0976e83805dd") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Futura Medium';
+  src: url("/static/fonts/FuturaMediumC.eot?2de3f7e9f4f9");
+  src: url("/static/fonts/FuturaMediumC.eot?&2de3f7e9f4f9#iefix") format("embedded-opentype"), url("/static/fonts/FuturaMediumC.woff?2de3f7e9f4f9") format("woff"), url("/static/fonts/FuturaMediumC.ttf?0976e83805dd") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Futura Normal';
+  src: url("/static/fonts/FuturaNormal.eot?2dff56434400");
+  src: url("/static/fonts/FuturaNormal.eot?&2dff56434400#iefix") format("embedded-opentype"), url("/static/fonts/FuturaNormal.woff?2dff56434400") format("woff"), url("/static/fonts/FuturaNormal.ttf?0976e83805dd") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Futura Book';
+  src: url("/static/fonts/FuturaBookC.eot?b471884d4ce6");
+  src: url("/static/fonts/FuturaBookC.eot?&b471884d4ce6#iefix") format("embedded-opentype"), url("/static/fonts/FuturaBookC.woff?b471884d4ce6") format("woff"), url("/static/fonts/FuturaBookC.ttf?cac3c8941066") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Philosopher';
+  src: url("/static/fonts/Philosopher.eot?705450b1f633");
+  src: url("/static/fonts/Philosopher.eot?&705450b1f633#iefix") format("embedded-opentype"), url("/static/fonts/Philosopher.woff?705450b1f633") format("woff"), url("/static/fonts/Philosopher.ttf?a00c2f0c5b2d") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+/* line 1, mainapp/static/css/_settings.scss */
+h1 {
+  font-size: 26px;
+  font-family: "Philosopher";
+  color: #F4F4F4;
+  font-weight: 600; }
+
+/* line 2, mainapp/static/css/_buttons.scss */
+.button-main-style-one {
+  font-size: 18px;
+  font-family: "Futura Light";
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #5E6181;
+  font-weight: 300;
+  border: 0.5px solid #5E6181;
+  padding: 9px 29px;
+  outline: none; }
+
+/* line 5, mainapp/static/css/_buttons.scss */
+.button-main-style-one:hover {
+  font-size: 18px;
+  font-family: "Futura Light";
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #595A6A;
+  font-weight: 300;
+  border: 0.5px solid #595A6A;
+  padding: 9px 29px;
+  outline: none; }
+
+/* line 8, mainapp/static/css/_buttons.scss */
+.button-main-style-one:focus {
+  font-size: 18px;
+  font-family: "Futura Light";
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #74799F;
+  font-weight: 300;
+  border: 0.5px solid #74799F;
+  padding: 9px 29px;
+  outline: none; }
+
+/* line 11, mainapp/static/css/_buttons.scss */
+.button-main-style-one:disabled {
+  font-size: 18px;
+  font-family: "Futura Light";
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #BDBDBD;
+  font-weight: 300;
+  border: 0.5px solid #BDBDBD;
+  padding: 9px 29px;
+  outline: none; }
+
+/* line 15, mainapp/static/css/_buttons.scss */
+.button-main-style-two {
+  font-size: 18px;
+  font-family: "Futura Light";
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0);
+  font-weight: 300;
+  border: 1px solid #FFFFFF;
+  padding: 9px 29px;
+  outline: none; }
+
+/* line 18, mainapp/static/css/_buttons.scss */
+.button-main-style-two:hover {
+  font-size: 18px;
+  font-family: "Futura Light";
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0);
+  font-weight: 300;
+  border: 2px solid #FFFFFF;
+  padding: 9px 29px;
+  outline: none; }
+
+/* line 21, mainapp/static/css/_buttons.scss */
+.button-main-style-two:focus {
+  font-size: 18px;
+  font-family: "Futura Light";
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0);
+  font-weight: 300;
+  border: 0.5px solid #FFFFFF;
+  padding: 9px 29px;
+  outline: none; }
+
+/* line 24, mainapp/static/css/_buttons.scss */
+.button-main-style-two:disabled {
+  font-size: 18px;
+  font-family: "Futura Light";
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0);
+  font-weight: 300;
+  border: 1px solid #FFFFFF;
+  padding: 9px 29px;
+  outline: none; }
+
+/* line 1, mainapp/static/css/views/_header.scss */
+.header {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0);
+  height: 76px;
+  position: relative; }
+  /* line 7, mainapp/static/css/views/_header.scss */
+  .header .part-one, .header .part-two {
+    display: flex;
+    align-items: center;
+    padding: 0; }
+  /* line 12, mainapp/static/css/views/_header.scss */
+  .header .header-burger {
+    justify-content: flex-start;
+    padding: 0; }
+  /* line 16, mainapp/static/css/views/_header.scss */
+  .header .burger-button {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    justify-content: center;
+    align-items: center; }
+  /* line 24, mainapp/static/css/views/_header.scss */
+  .header .burger-button span,
+  .header .burger-button span::before,
+  .header .burger-button span::after {
+    position: absolute;
+    top: 50%;
+    margin-bottom: -1px;
+    left: 50%;
+    margin-left: -12.5px;
+    width: 25px;
+    height: 1px;
+    background-color: white; }
+  /* line 36, mainapp/static/css/views/_header.scss */
+  .header .burger-button span::before,
+  .header .burger-button span::after {
+    content: '';
+    display: block; }
+  /* line 41, mainapp/static/css/views/_header.scss */
+  .header .burger-button span::before {
+    transform: translateY(-7px); }
+  /* line 44, mainapp/static/css/views/_header.scss */
+  .header .burger-button span::after {
+    transform: translateY(5px); }
+  /* line 47, mainapp/static/css/views/_header.scss */
+  .header .header-logo {
+    padding: 0; }
+  /* line 50, mainapp/static/css/views/_header.scss */
+  .header .logo {
+    width: 80px;
+    height: 50px;
+    cursor: pointer; }
+  /* line 55, mainapp/static/css/views/_header.scss */
+  .header ul {
+    display: flex;
+    list-style-type: none;
+    height: 32px;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    color: #FFFFFF; }
+  /* line 64, mainapp/static/css/views/_header.scss */
+  .header li {
+    margin: 0px 15px; }
+  /* line 67, mainapp/static/css/views/_header.scss */
+  .header a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Futura Light";
+    color: #FFFFFF;
+    font-weight: normal; }
+  /* line 71, mainapp/static/css/views/_header.scss */
+  .header i {
+    color: #FFFFFF; }
+  /* line 74, mainapp/static/css/views/_header.scss */
+  .header .header-contacts {
+    height: 30px; }
+  /* line 77, mainapp/static/css/views/_header.scss */
+  .header .header-contacts p {
+    line-height: 10px;
+    padding: 0;
+    font-size: 12px;
+    font-family: "Futura Light";
+    color: #FFFFFF;
+    font-weight: normal; }
+  /* line 82, mainapp/static/css/views/_header.scss */
+  .header .phone-number {
+    font-size: 22px;
+    font-family: "Futura Medium";
+    color: #FFFFFF;
+    font-weight: normal; }
+  /* line 85, mainapp/static/css/views/_header.scss */
+  .header .first-ul {
+    justify-content: flex-end; }
+  /* line 88, mainapp/static/css/views/_header.scss */
+  .header .second-ul {
+    justify-content: flex-end; }
+
+/* line 1, mainapp/static/css/views/_index.scss */
+.main-form {
+  background-image: url("/static/img/HERO1.png?a4e80c4155e7");
+  background-size: cover;
+  display: block;
+  padding: 25px;
+  margin-top: -80px;
+  width: 100%;
+  height: 804px;
+  text-align: center; }
+  /* line 11, mainapp/static/css/views/_index.scss */
+  .main-form .search-hotel {
+    display: block;
+    width: 76%;
+    height: 110px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    border-radius: 6px;
+    margin: 70px auto; }
+  /* line 20, mainapp/static/css/views/_index.scss */
+  .main-form .form-title {
+    margin-top: 370px;
+    line-height: 29px; }
+  /* line 24, mainapp/static/css/views/_index.scss */
+  .main-form .form-wrapper {
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  /* line 31, mainapp/static/css/views/_index.scss */
+  .main-form .form-buttons {
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 50px; }
+  /* line 36, mainapp/static/css/views/_index.scss */
+  .main-form .form-wrapper label {
+    display: block;
+    color: white; }
+  /* line 40, mainapp/static/css/views/_index.scss */
+  .main-form .form-div, .main-form .form-div input {
+    padding: 0;
+    margin: 0; }
+  /* line 44, mainapp/static/css/views/_index.scss */
+  .main-form .form-div input {
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    text-align: center;
+    color: white;
+    outline: none; }
+  /* line 52, mainapp/static/css/views/_index.scss */
+  .main-form .form-div input::placeholder {
+    color: white; }
+
+/* line 1, mainapp/static/css/views/_footer.scss */
+.footer {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 25px 0px;
+  background-color: #5E6181;
+  color: white; }
+
+/* line 9, mainapp/static/css/views/_footer.scss */
+.footer-left-side {
+  display: flex;
+  width: 47%;
+  height: auto; }
+
+/* line 14, mainapp/static/css/views/_footer.scss */
+.footer-ul-one, .footer-ul-two, .footer-ul-three {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 19, mainapp/static/css/views/_footer.scss */
+.footer-container-ul {
+  margin: 0 auto; }
+
+/* line 22, mainapp/static/css/views/_footer.scss */
+.foter-right-side {
+  display: block;
+  width: 35%;
+  height: auto; }
+
+/* line 27, mainapp/static/css/views/_footer.scss */
+.footer-right-upper {
+  display: flex;
+  justify-content: space-between; }
+
+/* line 31, mainapp/static/css/views/_footer.scss */
+.footer-contacts-part-one {
+  display: flex; }
+
+/* line 34, mainapp/static/css/views/_footer.scss */
+.footer-contacts-part-two {
+  display: block; }
+
+/* line 37, mainapp/static/css/views/_footer.scss */
+.foter-social {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; }
+
+/* line 42, mainapp/static/css/views/_footer.scss */
+.foter-social i {
+  font-size: 25px; }
+
+/* line 45, mainapp/static/css/views/_footer.scss */
+.foter-social img {
+  color: white; }
+
+/* line 48, mainapp/static/css/views/_footer.scss */
+.footer-right-down input {
+  background-color: rgba(0, 0, 0, 0);
+  color: #BDBDBD;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: solid 0.5px #BDBDBD;
+  width: 60%; }
+
+/* line 57, mainapp/static/css/views/_footer.scss */
+.footer-right-down button {
+  background-color: rgba(0, 0, 0, 0);
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 13px;
+  letter-spacing: 0.1em;
+  text-transform: lowercase;
+  color: #BDBDBD;
+  border: 0.5px solid #BDBDBD;
+  padding: 5px 10px; }
+
+/* line 68, mainapp/static/css/views/_footer.scss */
+.footer-logo {
+  display: flex;
+  width: 15%;
+  padding: 0;
+  margin-left: 25px; }
+
+/* line 74, mainapp/static/css/views/_footer.scss */
+.footer p {
+  font-size: 12px;
+  font-family: "Futura Light";
+  color: white;
+  font-weight: 300; }
+
+/* line 77, mainapp/static/css/views/_footer.scss */
+.footer-addres {
+  font-size: 18px;
+  font-family: "Futura Medium";
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase; }
+
+/* line 81, mainapp/static/css/views/_footer.scss */
+.footer-email {
+  font-size: 18px;
+  font-family: "Futura Medium";
+  color: white;
+  font-weight: 500; }

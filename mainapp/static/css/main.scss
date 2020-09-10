@@ -1,7 +1,11 @@
+// Порядок підключення має значення!
 @import 'fonts';
 @import 'mixins';
+@import 'vars';
 @import 'settings';
+@import 'buttons';
 
+// Порядок підключення не має значення!
 @import 'views/header';
 @import 'views/index';
 @import 'views/footer';

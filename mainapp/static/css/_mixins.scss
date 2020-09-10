@@ -5,10 +5,14 @@
     font-weight: $font-weight;
 }
 
-@mixin button($font-size, $font-family, $color, $bgcolor, $font-weight) {
+@mixin button($font-size, $font-family, $text-transform, $color, $bgcolor, $font-weight, $border, $padding, $outline) {
     font-size: $font-size;
     font-family: $font-family;
+    text-transform: $text-transform;
     color: $color;
     background-color: $bgcolor;
     font-weight: $font-weight;
+    border: $border;
+    padding: $padding;
+    outline: $outline;
 }
