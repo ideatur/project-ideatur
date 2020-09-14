@@ -59,7 +59,6 @@
         color: $primary-color_10;
     }
     .footer-right-down input{
-        
         margin-right: -1px;
     }
     .footer-right-down input{
@@ -77,7 +76,7 @@
         line-height: 13px;
         letter-spacing: 0.1em;
         text-transform: lowercase;
-        padding: 4px 130px 0px 4px;
+        padding: 4px 130px 0px 0px;
     }
     .footer-right-down input:focus {
         outline: none

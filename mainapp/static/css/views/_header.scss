@@ -3,6 +3,7 @@
     background-color: $primary-color-crystal-clear;
     height: 76px;
     position: relative;
+    z-index: 2;
 
     .part-one, .part-two {
         display: flex;

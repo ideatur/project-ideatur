@@ -25,18 +25,19 @@
   @include button(18px, $font-futura-light, uppercase, $primary-color_10, $primary-color-crystal-clear, 300, 1px solid $primary-color_10, 9px 29px, none);
 }
 //footer-btn-main-two
-.footer-button-main-style-two {
+.footer-button-main-style-one {
   @include button(12px, $font-futura-light, lowercase, $primary-color_10, $primary-color_1, 300, 0.5px solid $primary-color_10, 1px 29px, none);
+  line-height: 12px;
 }
-.footer-button-main-style-two:hover {
+.footer-button-main-style-one:hover {
   @include button(12px, $font-futura-light, lowercase, $primary-color_10, $primary-color_2, 300, 0.5px solid $primary-color_10, 1px 29px, none);
-
+  line-height: 12px;
 }
-.footer-button-main-style-two:focus {
+.footer-button-main-style-one:focus {
   @include button(12px, $font-futura-light, lowercase, $primary-color_10, $primary-color_3, 300, 0.5px solid $primary-color_10, 1px 29px, none);
-
+  line-height: 12px;
 }
-.footer-button-main-style-two:disabled {
+.footer-button-main-style-one:disabled {
   @include button(12px, $font-futura-light, lowercase, $primary-color_10, $primary-color_4, 300, 0.5px solid $primary-color_10, 1px 29px, none);
-
+  line-height: 12px;
 }
