@@ -15,10 +15,11 @@
                     <label>Місто вильоту</label>
                     <input type="text" name="country" placeholder="">
                 </div>
-                <div class="form-div">
+                <div class="form-div for-date">
                     <label>Дата вильоту</label>
                     <input type="date" name="country" value="2020-01-01"
-                            max="2030-01-01" min="2020-01-01" class="form-date">
+                            max="2030-01-01" min="2020-01-01" class="form-date" id="search-calendar">
+                    <i class="far fa-calendar-minus"></i>
                 </div>
                 <div class="form-div">
                 <label>Кількість ночей</label>
@@ -30,7 +31,7 @@
                     <input type="text" name="country" placeholder="">
                 </div>
             </div>
-            <div class="row form-buttons col-12">
+            <div class="form-buttons col-8">
                 <button class="button-main-style-two">Розширений пошук</button>
                 <button class="button-main-style-one">Знайти тури</button>
             </div>
@@ -38,9 +39,9 @@
     </div>
     <div class="hot-tours container col-12">
         <h2 class="hot-tour-title-big">гарячі тури</h2>
-        <p class="hot-tour-title-low">гарячі тури</p>
-        <div class="tour-nav">
-            <ul>
+        <h3 class="hot-tour-title-low">гарячі тури</h3>
+        <div class="tour-nav col-4 offset-8">
+            <ul class="row navigation-list">
                 <li>популярні</li>
                 <li>туреччина</li>
                 <li>болгарія</li>
@@ -50,90 +51,123 @@
                 <li>оае</li>
             </ul>
         </div>
-        <div class="container">
-            <div class="main-photo-album">
-                <div class="pic-one">
+        <div class="container col-12">
+            <div class="main-background col-12">
+
+                <div class="hot-tour-card pic-one">
+                    <div class="card-picture">
+                        <img src="{{ STATIC_PREFIX }}img/main-photo-album/1.png" alt="card-1"/>
+                    </div>
                     <div class="album-info">
                         <p class="album-raitings">
-                            <i class="far fa-like"></i><span class="album-raiting-like">10.0</span>
+                            <i class="far fa-thumbs-up"></i><span class="album-raiting-like">10.0</span>
                             <i class="far fa-star"></i><span class="album-raiting-star">5</span>
+                            <span class="album-people"><i class="far fa-user"></i><i class="far fa-user"></i></span>
                         </p>
                         <p class="album-location">Туреччина, белек</p>
                         <p class="album-tour-title">Adam&Eva Resort 5*</p>
                         <p class="album-price">15 822</p>
                     </div>
                 </div>
-                <div class="pic-two">
+
+                <div class="hot-tour-card pic-two">
+                    <div class="card-picture">
+                        <img src="{{ STATIC_PREFIX }}img/main-photo-album/2.png" alt="card-2"/></div>
                     <div class="album-info">
                         <p class="album-raitings">
-                            <i class="far fa-like"></i><span class="album-raiting-like">10.0</span>
+                            <i class="far fa-thumbs-up"></i><span class="album-raiting-like">10.0</span>
                             <i class="far fa-star"></i><span class="album-raiting-star">5</span>
+                            <span class="album-people"><i class="far fa-user"></i><i class="far fa-user"></i></span>
                         </p>
                         <p class="album-location">Туреччина, белек</p>
                         <p class="album-tour-title">Adam&Eva Resort 5*</p>
                         <p class="album-price">15 822</p>
                     </div>
                 </div>
-                <div class="pic-three">
+
+                <div class="hot-tour-card pic-three">
+                    <div class="card-picture">
+                        <img src="{{ STATIC_PREFIX }}img/main-photo-album/3.png" alt="card-3"/></div>
                     <div class="album-info">
                         <p class="album-raitings">
-                            <i class="far fa-like"></i><span class="album-raiting-like">10.0</span>
+                            <i class="far fa-thumbs-up"></i><span class="album-raiting-like">10.0</span>
                             <i class="far fa-star"></i><span class="album-raiting-star">5</span>
+                            <span class="album-people"><i class="far fa-user"></i><i class="far fa-user"></i></span>
                         </p>
                         <p class="album-location">Туреччина, белек</p>
                         <p class="album-tour-title">Adam&Eva Resort 5*</p>
                         <p class="album-price">15 822</p>
                     </div>
                 </div>
-                <div class="pic-four">
+
+                <div class="hot-tour-card pic-four">
+                    <div class="card-picture">
+                        <img src="{{ STATIC_PREFIX }}img/main-photo-album/4.png" alt="card-4"/></div>
                     <div class="album-info">
                         <p class="album-raitings">
-                            <i class="far fa-like"></i><span class="album-raiting-like">10.0</span>
+                            <i class="far fa-thumbs-up"></i><span class="album-raiting-like">10.0</span>
                             <i class="far fa-star"></i><span class="album-raiting-star">5</span>
+                            <span class="album-people"><i class="far fa-user"></i><i class="far fa-user"></i></span>
                         </p>
                         <p class="album-location">Туреччина, белек</p>
                         <p class="album-tour-title">Adam&Eva Resort 5*</p>
                         <p class="album-price">15 822</p>
                     </div>
                 </div>
-                <div class="pic-five">
+
+                <div class="hot-tour-card pic-five">
+                    <div class="card-picture">
+                        <img src="{{ STATIC_PREFIX }}img/main-photo-album/5.png" alt="card-5"/></div>
                     <div class="album-info">
                         <p class="album-raitings">
-                            <i class="far fa-like"></i><span class="album-raiting-like">10.0</span>
+                            <i class="far fa-thumbs-up"></i><span class="album-raiting-like">10.0</span>
                             <i class="far fa-star"></i><span class="album-raiting-star">5</span>
+                            <span class="album-people"><i class="far fa-user"></i><i class="far fa-user"></i></span>
                         </p>
                         <p class="album-location">Туреччина, белек</p>
                         <p class="album-tour-title">Adam&Eva Resort 5*</p>
                         <p class="album-price">15 822</p>
                     </div>
                 </div>
-                <div class="pic-six">
+
+                <div class="hot-tour-card pic-six">
+                    <div class="card-picture">
+                        <img src="{{ STATIC_PREFIX }}img/main-photo-album/6.png" alt="card-6"/></div>
                     <div class="album-info">
                         <p class="album-raitings">
-                            <i class="far fa-like"></i><span class="album-raiting-like">10.0</span>
+                            <i class="far fa-thumbs-up"></i><span class="album-raiting-like">10.0</span>
                             <i class="far fa-star"></i><span class="album-raiting-star">5</span>
+                            <span class="album-people"><i class="far fa-user"></i><i class="far fa-user"></i></span>
                         </p>
                         <p class="album-location">Туреччина, белек</p>
                         <p class="album-tour-title">Adam&Eva Resort 5*</p>
                         <p class="album-price">15 822</p>
                     </div>
                 </div>
-                <div class="pic-seven">
+
+                <div class="hot-tour-card pic-seven">
+                    <div class="card-picture">
+                        <img src="{{ STATIC_PREFIX }}img/main-photo-album/7.png" alt="card-7"/></div>
                     <div class="album-info">
                         <p class="album-raitings">
-                            <i class="far fa-like"></i><span class="album-raiting-like">10.0</span>
+                            <i class="far fa-thumbs-up"></i><span class="album-raiting-like">10.0</span>
                             <i class="far fa-star"></i><span class="album-raiting-star">5</span>
+                            <span class="album-people"><i class="far fa-user"></i><i class="far fa-user"></i></span>
                         </p>
                         <p class="album-location">Туреччина, белек</p>
                         <p class="album-tour-title">Adam&Eva Resort 5*</p>
                         <p class="album-price">15 822</p>
                     </div>
                 </div>
-                <div class="pic-eight">
+
+                <div class="hot-tour-card pic-eight">
+                    <div class="card-picture">
+                        <img src="{{ STATIC_PREFIX }}img/main-photo-album/8.png" alt="card-8"/></div>
                     <div class="album-info">
                         <p class="album-raitings">
-                            <i class="far fa-like"></i><span class="album-raiting-like">10.0</span>
+                            <i class="far fa-thumbs-up"></i><span class="album-raiting-like">10.0</span>
                             <i class="far fa-star"></i><span class="album-raiting-star">5</span>
+                            <span class="album-people"><i class="far fa-user"></i><i class="far fa-user"></i></span>
                         </p>
                         <p class="album-location">Туреччина, белек</p>
                         <p class="album-tour-title">Adam&Eva Resort 5*</p>
@@ -141,8 +175,12 @@
                     </div>
                 </div>
             </div>
-            <button class="main-photo-button">більше турів</button>
+            <button class="button-main-style-one">більше турів</button>
+            <div class="hot-tour-fluid col-12"></div>
         </div>
+
+        
+
     </div>
     <div class="main-statistics container col-12">
         <div>
@@ -165,22 +203,24 @@
     <div class="contact-us-main-form container col-12">
         <div class="contact-us-main-form-picture"></div>
         <div class="contact-us-main-form-example">
-            <p class="contact-us-main-form-title">Немає часу на самостійні пошуки?</p>
-            <p>Наші менеджери зроблять це для вас бекоштовно!</p>
-            <p>Заповніть заявку на підбір туру!</p>
-            <form class="contact-us-main-form-on-easy">
-                <input type="text" placeholder="Ім'я">
-                <input type="text" placeholder="Телефн">
-                <input type="text" placeholder="Спосіб комунікації">
-                <button class="countuct-us-main-form-button">підібрати тур</button>
-            </form>
+            <article>
+                <p class="contact-us-main-form-title">Немає часу на самостійні пошуки?</p>
+                <p>Наші менеджери зроблять це для вас бекоштовно!</p>
+                <p>Заповніть заявку на підбір туру!</p>
+                <form class="contact-us-main-form-on-easy">
+                    <input type="text" placeholder="Ім'я">
+                    <input type="text" placeholder="Телефн">
+                    <input type="text" placeholder="Спосіб комунікації">
+                    <button class="button-main-style-one">підібрати тур</button>
+                </form>
+            </article>
         </div>
     </div>
     <div class="main-blog container col-12">
-        <h2 class="blog-title-big">гарячі тури</h2>
-        <p class="blog-title-low">гарячі тури</p>
+        <h2 class="blog-title-big">блог</h2>
+        <h3 class="blog-title-low">блог</h3>
         <div class="blog-nav">
-            <ul>
+            <ul class="navigation-list">
                 <li>#цікаве про туризм</li>
                 <li>#топ рейтинг</li>
                 <li>#поради</li>
@@ -225,7 +265,7 @@
                             </p>
                         </div>
                         <div class="blog-article-small-social-div-two">
-                            <button class="blog-article-small-more-news">більше новин</button>
+                            <button class="button-main-style-two">більше новин</button>
                         </div>
                     </div>
                 </article>
@@ -254,7 +294,7 @@
     <div class="main-instagram container col-12">
         <div class="main-instagram">
             <h2 class="insta-title-big">instagram</h2>
-            <p class="insta-title-low">@ideatourrivne</p>
+            <h3 class="insta-title-low col-3">@ideatourrivne</h3>
         </div>
         <div class="main-instagram-album">
             <div id="main-instagram-slider">

@@ -1,3 +1,20 @@
 h1 {
-    @include font(26px, $font-philosopher, #F4F4F4, 600);
+  @include font(26px, $font-philosopher, $primary-color_0, 600);
   }
+h2 {
+  @include font(180px, $font-futura-bold, $primary-color_7, 700);
+  text-transform: uppercase;
+}
+h3 {
+  @include font(30px, $font-futura-demi, $primary-color_1, 600);
+  text-transform: uppercase;
+}
+article p {
+  @include font(16px, $font-futura-light, $primary-color_11, 300);
+}
+.navigation-list li{
+  @include font(18px, $font-futura-light, $primary-color_1, 300);
+  text-transform: uppercase;
+  margin: 0px 15px;
+  cursor: pointer;
+}

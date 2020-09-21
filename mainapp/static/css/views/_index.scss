@@ -1,3 +1,8 @@
+main {
+    ul {
+        list-style-type: none;
+    }
+}
 .main-form {
     background-image: url("../img/HERO1.png");
     background-size: cover;
@@ -9,6 +14,27 @@
     text-align: center;
     z-index: 1;
 
+    #search-calendar[type="date"]::-webkit-calendar-picker-indicator {
+        color: transparent;
+        background: none;
+        z-index: 1;
+    }
+    input[type="date"]:before {
+        color: transparent;
+        background: none;
+        display: block;
+    }
+    .for-date {
+        position: relative;
+    }
+    .fa-calendar-minus {
+        z-index: 0;
+        position: absolute;
+        right: 10px;
+        top: 45px;
+        color: white;
+        cursor: pointer;
+    }
     .search-hotel {
         display: block;
         width: 76%;
@@ -30,9 +56,12 @@
         justify-content: space-around;
     }
     .form-buttons {
+        display: flex;
+        justify-content: space-evenly;
         margin: 0 auto;
         padding: 0;
         margin-top: 50px;
+        justify-self: center;
     }
     .form-wrapper label {
         display: block;
@@ -54,9 +83,89 @@
         color: white;
     }
 }
-// .hot-tours {
-//     text-transform: uppercase;
-// }
-// .main-tour-partners{
-//     display: flex;
-// }
+.hot-tours {
+    .main-background {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        z-index: 1;
+        position: relative;
+        padding: 0;
+    }
+    button {
+        z-index: 1;
+        display: block;
+        position: relative;
+        margin: 0 auto;
+    }
+    .hot-tour-fluid {
+        display: block;
+        margin-top: -680px;
+        height: 740px;
+        z-index: 0;
+        background-color: $primary-color_7;
+    }
+    .hot-tour-card {
+        padding: 0;
+        width: 24%;
+        margin-bottom: 110px;
+        .card-picture img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .album-info {
+        background-color: white;
+        padding: 9px;
+        border-radius: 5%;
+        display: block;
+        margin: -57px auto;
+        z-index: 2;
+        position: relative;
+        width: 80%;
+
+        .album-people {
+            display: block;
+            float: right;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        p:nth-child(1) {
+            font-family: $font-futura-medium;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+            color: $primary-color_1;
+        }
+        p:nth-child(2) {
+            font-family: $font-futura-medium;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16.18px;
+            letter-spacing: 10%;
+            color: $primary-color_8;
+        }
+        p:nth-child(3) {
+            font-family: $font-futura-medium;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 18.5px;
+            color: $primary-color_1;
+        }
+        p:nth-child(4) {
+            font-family: $font-futura-medium;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 16.18px;
+            color: $primary-color_1;
+            margin-bottom: 0;
+        }
+        
+    }
+}
+
+.insta-title-low {
+    color: white;
+    background-color: $primary-color_8;
+}
