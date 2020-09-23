@@ -1,36 +1,41 @@
 {% load static %}
-<header>
-    <div class="header col-12">
-        <div class="part-one col-7">
 
-            <div class="header-logo col-1">
-                <img src="{{ STATIC_PREFIX }}img/LogoIdeaTour.svg" alt="logo image" class="logo"/>
-            </div>
+{% if not serial_header %} 
+    <header class="my-header col-12">
+{% else %}
+    <header class="header-fluid serial-header col-12">
+{% endif %}
 
-            <div class="header-burger col-1">
-                <a href="#" class="burger-button">
-                    <span></span>
+    <div class="part-one col-7">
+
+        <div class="header-logo col-1">
+            <a href="{% url 'index' %}"><img src="{{ STATIC_PREFIX }}img/LogoIdeaTour.svg" alt="logo image" class="logo"/>
                 </a>
             </div>
 
-            <ul class="first-ul col-9">
-                <li><a href="#">Усі тури</a></li>
-                <li><a href="#">Гарячі тури</a></li>
-                <li><a href="#">Блог</a></li>
-                <li><a href="#">Інформація</a></li>
-            </ul>
+        <div class="header-burger col-1">
+            <a href="#" class="burger-button">
+                <span></span>
+            </a>
         </div>
 
-        <div class="part-two col-5">
-            <div class="header-contacts col-5">
-                <p class="col-12">з 9:00 до 22:00 щодня</p>
-                <p class="phone-number col-12">0 800 500 505</p>
-            </div>
-            <ul class="second-ul col-7">
-                <li><p>укр</p></li>
-                <li><i class="far fa-heart" id="header-favorite"></i></li>
-                <li><i class="far fa-user" id="header-user"></i></li>
-            </ul>
+        <ul class="first-ul col-9">
+            <li><a href="#">Усі тури</a></li>
+            <li><a href="#">Гарячі тури</a></li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Інформація</a></li>
+        </ul>
+    </div>
+
+    <div class="part-two col-5">
+        <div class="header-contacts col-5">
+            <p class="col-12">з 9:00 до 22:00 щодня</p>
+            <p class="phone-number col-12">0 800 500 505</p>
         </div>
+        <ul class="second-ul col-7">
+            <li><p>укр</p></li>
+            <li><i class="far fa-heart" id="header-favorite"></i></li>
+            <li><i class="far fa-user" id="header-user"></i></li>
+        </ul>
     </div>
 </header>
