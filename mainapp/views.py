@@ -3,3 +3,6 @@ from django.views.generic.base import View
 
 def index(request):
     return render(request, 'pages/index.html')
+
+def about(request):
+    return render(request, 'pages/about.html')

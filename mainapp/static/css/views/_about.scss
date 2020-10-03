@@ -1,0 +1,217 @@
+.main {
+    width: 1440px;
+}
+
+.back-about, .back-team, .back-docs, .back-contacts {
+    height: 192px;
+    font-style: normal;
+    line-height: 192px;
+    z-index: 1;
+    display: block;
+}
+
+.front-about, .front-team, .front-docs, .front-contacts {
+    z-index: 2;
+    height: 35px;
+    line-height: 35px;
+    position: relative;
+    display: block;
+    margin-top: -100px;
+}
+
+.about-us-2 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.idea-rest {
+    width: 94px;
+    font-style: normal;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    @include font(14px, Futura Medium, #595A6A, 500);
+}
+
+.touristic-business {
+    width: 674px;
+    font-style: normal;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    @include font(18px, Futura Light, #000000, 300);
+    margin-right: 10%;
+}
+
+.first-image {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.quote {
+    padding-left: 20%;
+}
+
+.quote p {
+    font: $font-philosopher;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 28px;
+    color: $primary-color_1; 
+    width: 436px;
+    margin-top: 100px;
+}
+
+.quote span {
+    font: $font-futura-light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    color: $primary-color_6;
+}
+
+// .quote p:nth-child(1), p:nth-child(4) {
+//     font: $font-philosopher;
+//     font-style: normal;
+//     font-weight: normal;
+//     font-size: 150px;
+//     line-height: 30px;
+//     color: $primary-color_8; 
+// }
+
+// .quote p:nth-child(1) {
+//     margin-top: 50px;
+// }
+
+.quote-photo {
+    margin-top: 50px;
+}
+
+.about-ideatour {
+    margin-top: 100px;
+    font: $font-futura-light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    width: 475px;
+    padding: 0 10%;
+}
+
+.our-managers {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.our-managers img {
+    flex: 0 1 auto;
+    margin: 20px;
+}
+
+.our-managers {
+    padding-left: 20%;
+}
+
+.docs-menu {
+    margin-top: 50px;
+    display: flex;
+    height: 78px;
+    background-color: #F7F8F9;
+    float: right;
+    align-items: center;
+    justify-content: space-around;
+    font: $font-futura-light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $primary-color_11;
+}
+
+.docs-photos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.docs-photos span {
+    font: $font-futura-light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 20px;
+    color: $primary-color_11;
+    letter-spacing: 0.05em;
+}
+
+.docs-menu a:hover, .docs-menu a:active {
+    color: $primary-color_8;
+    text-decoration: none;
+}
+
+.contacts-image {
+    margin-left: 50px;
+}
+
+.contacts-image img {
+    z-index: 1;
+}
+
+.contacts-info {
+    width: 496px;
+    height: 341px;
+    z-index: 2;
+    background-color: $primary-color_7;
+    position: relative;
+    left: 210px;
+    top: -430px;
+}
+
+.social {
+    color: $primary-color_8;
+    float: right;
+    margin-top: 20px;
+    padding-left: 20%;
+}
+
+.social i {
+    margin-right: 20px;
+}
+
+.adress p:nth-child(1), .phone p:nth-child(1), .email p:nth-child(1) {
+    @include font(16px, $font-futura-medium, $primary-color_6, 500);
+        text-transform: lowercase;
+        padding-left: 50px;
+        line-height: 18px;
+        letter-spacing: 0.1em;
+}
+
+.adress p:nth-child(2), .phone p:nth-child(2), .email p:nth-child(2) {
+    @include font(18px, $font-futura-medium, $primary-color_1, 500);
+        text-transform: uppercase;
+        line-height: 21px;
+        letter-spacing: 0.05em;
+        padding-left: 65px;
+}
+
+.adress p:nth-child(3), .phone p:nth-child(3), .adress p:nth-child(4) {
+    @include font(14px, $font-futura-light, $primary-color_1, 500);
+    line-height: 15px;
+    padding-left: 65px;
+}
+
+.adress p:nth-child(1) {
+    margin-top: 30px;
+}
+
+.conts {
+    height: 539px;
+}

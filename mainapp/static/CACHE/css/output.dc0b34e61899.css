@@ -1,0 +1,763 @@
+@font-face {
+  font-family: 'Futura Demi';
+  src: url("/static/fonts/FuturaDemiC.eot?72c8939c5a43");
+  src: url("/static/fonts/FuturaDemiC.eot?&72c8939c5a43#iefix") format("embedded-opentype"), url("/static/fonts/FuturaDemiC.woff?72c8939c5a43") format("woff"), url("/static/fonts/FuturaDemiC.ttf?72c8939c5a43") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Futura Light';
+  src: url("/static/fonts/FuturaLightC.eot?72c8939c5a43");
+  src: url("/static/fonts/FuturaLightC.eot?&72c8939c5a43#iefix") format("embedded-opentype"), url("/static/fonts/FuturaLightC.woff?72c8939c5a43") format("woff"), url("/static/fonts/FuturaLightC.ttf?72c8939c5a43") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Futura Medium';
+  src: url("/static/fonts/FuturaMediumC.eot?72c8939c5a43");
+  src: url("/static/fonts/FuturaMediumC.eot?&72c8939c5a43#iefix") format("embedded-opentype"), url("/static/fonts/FuturaMediumC.woff?72c8939c5a43") format("woff"), url("/static/fonts/FuturaMediumC.ttf?72c8939c5a43") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Futura Normal';
+  src: url("/static/fonts/FuturaNormal.eot?72c8939c5a43");
+  src: url("/static/fonts/FuturaNormal.eot?&72c8939c5a43#iefix") format("embedded-opentype"), url("/static/fonts/FuturaNormal.woff?72c8939c5a43") format("woff"), url("/static/fonts/FuturaNormal.ttf?72c8939c5a43") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Futura Book';
+  src: url("/static/fonts/FuturaBookC.eot?72c8939c5a43");
+  src: url("/static/fonts/FuturaBookC.eot?&72c8939c5a43#iefix") format("embedded-opentype"), url("/static/fonts/FuturaBookC.woff?72c8939c5a43") format("woff"), url("/static/fonts/FuturaBookC.ttf?72c8939c5a43") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Futura Bold';
+  src: url("/static/fonts/FuturaBold.eot?389a0613166b");
+  src: url("/static/fonts/FuturaBold.eot?&389a0613166b#iefix") format("embedded-opentype"), url("/static/fonts/FuturaBold.woff?389a0613166b") format("woff"), url("/static/fonts/FuturaBold.ttf?389a0613166b") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Philosopher';
+  src: url("/static/fonts/Philosopher.eot?72c8939c5a43");
+  src: url("/static/fonts/Philosopher.eot?&72c8939c5a43#iefix") format("embedded-opentype"), url("/static/fonts/Philosopher.woff?72c8939c5a43") format("woff"), url("/static/fonts/Philosopher.ttf?72c8939c5a43") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+/* line 1, mainapp/static/css/_settings.scss */
+h1 {
+  font-size: 26px;
+  font-family: "Philosopher";
+  color: #F4F4F4;
+  font-weight: 600; }
+
+/* line 4, mainapp/static/css/_settings.scss */
+h2 {
+  font-size: 180px;
+  font-family: "Futura Bold";
+  color: #EBF1FC;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+/* line 8, mainapp/static/css/_settings.scss */
+h3 {
+  font-size: 30px;
+  font-family: "Futura Demi";
+  color: #5E6181;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+/* line 12, mainapp/static/css/_settings.scss */
+article p {
+  font-size: 16px;
+  font-family: "Futura Light";
+  color: #4A4A4A;
+  font-weight: 300; }
+
+/* line 15, mainapp/static/css/_settings.scss */
+.navigation-list li {
+  font-size: 18px;
+  font-family: "Futura Light";
+  color: #5E6181;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0px 15px;
+  cursor: pointer; }
+
+/* line 2, mainapp/static/css/_buttons.scss */
+.button-main-style-one {
+  font-size: 18px;
+  font-family: "Futura Light";
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #5E6181;
+  font-weight: 300;
+  border: 0.5px solid #5E6181;
+  padding: 9px 29px;
+  outline: none; }
+
+/* line 5, mainapp/static/css/_buttons.scss */
+.button-main-style-one:hover {
+  font-size: 18px;
+  font-family: "Futura Light";
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #595A6A;
+  font-weight: 300;
+  border: 0.5px solid #595A6A;
+  padding: 9px 29px;
+  outline: none; }
+
+/* line 8, mainapp/static/css/_buttons.scss */
+.button-main-style-one:focus {
+  font-size: 18px;
+  font-family: "Futura Light";
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #74799F;
+  font-weight: 300;
+  border: 0.5px solid #74799F;
+  padding: 9px 29px;
+  outline: none; }
+
+/* line 11, mainapp/static/css/_buttons.scss */
+.button-main-style-one:disabled {
+  font-size: 18px;
+  font-family: "Futura Light";
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #BDBDBD;
+  font-weight: 300;
+  border: 0.5px solid #BDBDBD;
+  padding: 9px 29px;
+  outline: none; }
+
+/* line 15, mainapp/static/css/_buttons.scss */
+.button-main-style-two {
+  font-size: 18px;
+  font-family: "Futura Light";
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0);
+  font-weight: 300;
+  border: 1px solid #FFFFFF;
+  padding: 9px 29px;
+  outline: none; }
+
+/* line 18, mainapp/static/css/_buttons.scss */
+.button-main-style-two:hover {
+  font-size: 18px;
+  font-family: "Futura Light";
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0);
+  font-weight: 300;
+  border: 2px solid #FFFFFF;
+  padding: 6.25px 27.5px;
+  outline: none;
+  margin-right: 1px; }
+
+/* line 22, mainapp/static/css/_buttons.scss */
+.button-main-style-two:focus {
+  font-size: 18px;
+  font-family: "Futura Light";
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0);
+  font-weight: 300;
+  border: 0.5px solid #FFFFFF;
+  padding: 9px 29px;
+  outline: none; }
+
+/* line 25, mainapp/static/css/_buttons.scss */
+.button-main-style-two:disabled {
+  font-size: 18px;
+  font-family: "Futura Light";
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0);
+  font-weight: 300;
+  border: 1px solid #FFFFFF;
+  padding: 8.5px 28.5px;
+  outline: none; }
+
+/* line 29, mainapp/static/css/_buttons.scss */
+.footer-button-main-style-one {
+  font-size: 12px;
+  font-family: "Futura Light";
+  text-transform: lowercase;
+  color: #FFFFFF;
+  background-color: #5E6181;
+  font-weight: 300;
+  border: 0.5px solid #FFFFFF;
+  padding: 1px 29px;
+  outline: none;
+  line-height: 12px; }
+
+/* line 33, mainapp/static/css/_buttons.scss */
+.footer-button-main-style-one:hover {
+  font-size: 12px;
+  font-family: "Futura Light";
+  text-transform: lowercase;
+  color: #FFFFFF;
+  background-color: #595A6A;
+  font-weight: 300;
+  border: 0.5px solid #FFFFFF;
+  padding: 1px 29px;
+  outline: none;
+  line-height: 12px; }
+
+/* line 37, mainapp/static/css/_buttons.scss */
+.footer-button-main-style-one:focus {
+  font-size: 12px;
+  font-family: "Futura Light";
+  text-transform: lowercase;
+  color: #FFFFFF;
+  background-color: #74799F;
+  font-weight: 300;
+  border: 0.5px solid #FFFFFF;
+  padding: 1px 29px;
+  outline: none;
+  line-height: 12px; }
+
+/* line 41, mainapp/static/css/_buttons.scss */
+.footer-button-main-style-one:disabled {
+  font-size: 12px;
+  font-family: "Futura Light";
+  text-transform: lowercase;
+  color: #FFFFFF;
+  background-color: #BDBDBD;
+  font-weight: 300;
+  border: 0.5px solid #FFFFFF;
+  padding: 1px 29px;
+  outline: none;
+  line-height: 12px; }
+
+/* line 1, mainapp/static/css/views/_header.scss */
+.header {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0);
+  height: 76px;
+  position: relative;
+  z-index: 2; }
+  /* line 8, mainapp/static/css/views/_header.scss */
+  .header .part-one, .header .part-two {
+    display: flex;
+    align-items: center;
+    padding: 0; }
+  /* line 13, mainapp/static/css/views/_header.scss */
+  .header .header-burger {
+    justify-content: flex-start;
+    padding: 0; }
+  /* line 17, mainapp/static/css/views/_header.scss */
+  .header .burger-button {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    justify-content: center;
+    align-items: center; }
+  /* line 25, mainapp/static/css/views/_header.scss */
+  .header .burger-button span,
+  .header .burger-button span::before,
+  .header .burger-button span::after {
+    position: absolute;
+    top: 50%;
+    margin-bottom: -1px;
+    left: 50%;
+    margin-left: -12.5px;
+    width: 25px;
+    height: 1px;
+    background-color: white; }
+  /* line 37, mainapp/static/css/views/_header.scss */
+  .header .burger-button span::before,
+  .header .burger-button span::after {
+    content: '';
+    display: block; }
+  /* line 42, mainapp/static/css/views/_header.scss */
+  .header .burger-button span::before {
+    transform: translateY(-7px); }
+  /* line 45, mainapp/static/css/views/_header.scss */
+  .header .burger-button span::after {
+    transform: translateY(5px); }
+  /* line 48, mainapp/static/css/views/_header.scss */
+  .header .header-logo {
+    padding: 0;
+    margin-right: 2rem; }
+  /* line 52, mainapp/static/css/views/_header.scss */
+  .header .logo {
+    width: 80px;
+    height: 50px;
+    cursor: pointer; }
+  /* line 57, mainapp/static/css/views/_header.scss */
+  .header ul {
+    display: flex;
+    list-style-type: none;
+    height: 32px;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    color: #FFFFFF; }
+  /* line 66, mainapp/static/css/views/_header.scss */
+  .header li {
+    margin: 0px 15px; }
+  /* line 69, mainapp/static/css/views/_header.scss */
+  .header a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Futura Light";
+    color: #FFFFFF;
+    font-weight: 300; }
+  /* line 73, mainapp/static/css/views/_header.scss */
+  .header i {
+    color: #FFFFFF; }
+  /* line 76, mainapp/static/css/views/_header.scss */
+  .header .header-contacts {
+    height: 30px; }
+  /* line 79, mainapp/static/css/views/_header.scss */
+  .header .header-contacts p:nth-child(1) {
+    line-height: 10px;
+    padding: 0;
+    font-size: 12px;
+    font-family: "Futura Light";
+    color: #FFFFFF;
+    font-weight: 300; }
+  /* line 84, mainapp/static/css/views/_header.scss */
+  .header .header-contacts p:nth-child(2) {
+    line-height: 10px;
+    padding: 0;
+    font-size: 22px;
+    font-family: "Futura Medium";
+    color: #FFFFFF;
+    font-weight: 500; }
+  /* line 89, mainapp/static/css/views/_header.scss */
+  .header .first-ul {
+    justify-content: flex-end; }
+    /* line 91, mainapp/static/css/views/_header.scss */
+    .header .first-ul a {
+      letter-spacing: 0.1em;
+      font-weight: 300; }
+  /* line 96, mainapp/static/css/views/_header.scss */
+  .header .second-ul {
+    justify-content: flex-end; }
+
+/* line 2, mainapp/static/css/views/_index.scss */
+main ul {
+  list-style-type: none; }
+
+/* line 6, mainapp/static/css/views/_index.scss */
+.main-form {
+  background-image: url("/static/img/HERO1.png?72c8939c5a43");
+  background-size: cover;
+  display: block;
+  padding: 25px;
+  margin-top: -80px;
+  width: 100%;
+  height: 804px;
+  text-align: center;
+  z-index: 1; }
+  /* line 17, mainapp/static/css/views/_index.scss */
+  .main-form #search-calendar[type="date"]::-webkit-calendar-picker-indicator {
+    color: transparent;
+    background: none;
+    z-index: 1; }
+  /* line 22, mainapp/static/css/views/_index.scss */
+  .main-form input[type="date"]:before {
+    color: transparent;
+    background: none;
+    display: block; }
+  /* line 27, mainapp/static/css/views/_index.scss */
+  .main-form .for-date {
+    position: relative; }
+  /* line 30, mainapp/static/css/views/_index.scss */
+  .main-form .fa-calendar-minus {
+    z-index: 0;
+    position: absolute;
+    right: 10px;
+    top: 45px;
+    color: white;
+    cursor: pointer; }
+  /* line 38, mainapp/static/css/views/_index.scss */
+  .main-form .search-hotel {
+    display: block;
+    width: 76%;
+    height: 110px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    border-radius: 6px;
+    margin: 70px auto; }
+  /* line 47, mainapp/static/css/views/_index.scss */
+  .main-form .form-title {
+    margin-top: 370px;
+    line-height: 29px; }
+  /* line 51, mainapp/static/css/views/_index.scss */
+  .main-form .form-wrapper {
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  /* line 58, mainapp/static/css/views/_index.scss */
+  .main-form .form-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 50px;
+    justify-self: center; }
+  /* line 66, mainapp/static/css/views/_index.scss */
+  .main-form .form-wrapper label {
+    display: block;
+    color: white; }
+  /* line 70, mainapp/static/css/views/_index.scss */
+  .main-form .form-div, .main-form .form-div input {
+    padding: 0;
+    margin: 0; }
+  /* line 74, mainapp/static/css/views/_index.scss */
+  .main-form .form-div input {
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    text-align: center;
+    color: white;
+    outline: none; }
+  /* line 82, mainapp/static/css/views/_index.scss */
+  .main-form .form-div input::placeholder {
+    color: white; }
+
+/* line 87, mainapp/static/css/views/_index.scss */
+.hot-tours .main-background {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  z-index: 1;
+  position: relative;
+  padding: 0; }
+
+/* line 95, mainapp/static/css/views/_index.scss */
+.hot-tours button {
+  z-index: 1;
+  display: block;
+  position: relative;
+  margin: 0 auto; }
+
+/* line 101, mainapp/static/css/views/_index.scss */
+.hot-tours .hot-tour-fluid {
+  display: block;
+  margin-top: -680px;
+  height: 740px;
+  z-index: 0;
+  background-color: #EBF1FC; }
+
+/* line 108, mainapp/static/css/views/_index.scss */
+.hot-tours .hot-tour-card {
+  padding: 0;
+  width: 24%;
+  margin-bottom: 110px; }
+  /* line 112, mainapp/static/css/views/_index.scss */
+  .hot-tours .hot-tour-card .card-picture img {
+    display: block;
+    margin: 0 auto; }
+
+/* line 117, mainapp/static/css/views/_index.scss */
+.hot-tours .album-info {
+  background-color: white;
+  padding: 9px;
+  border-radius: 5%;
+  display: block;
+  margin: -57px auto;
+  z-index: 2;
+  position: relative;
+  width: 80%; }
+  /* line 127, mainapp/static/css/views/_index.scss */
+  .hot-tours .album-info .album-people {
+    display: block;
+    float: right; }
+  /* line 131, mainapp/static/css/views/_index.scss */
+  .hot-tours .album-info p {
+    margin-bottom: 10px; }
+  /* line 134, mainapp/static/css/views/_index.scss */
+  .hot-tours .album-info p:nth-child(1) {
+    font-family: "Futura Medium";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #5E6181; }
+  /* line 141, mainapp/static/css/views/_index.scss */
+  .hot-tours .album-info p:nth-child(2) {
+    font-family: "Futura Medium";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.18px;
+    letter-spacing: 10%;
+    color: #E2A271; }
+  /* line 149, mainapp/static/css/views/_index.scss */
+  .hot-tours .album-info p:nth-child(3) {
+    font-family: "Futura Medium";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18.5px;
+    color: #5E6181; }
+  /* line 156, mainapp/static/css/views/_index.scss */
+  .hot-tours .album-info p:nth-child(4) {
+    font-family: "Futura Medium";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16.18px;
+    color: #5E6181;
+    margin-bottom: 0; }
+
+/* line 168, mainapp/static/css/views/_index.scss */
+.insta-title-low {
+  color: white;
+  background-color: #E2A271; }
+
+/* line 1, mainapp/static/css/views/_about.scss */
+.main {
+  width: 1440px; }
+
+/* line 5, mainapp/static/css/views/_about.scss */
+.back-about, .back-team, .back-docs, .back-contacts {
+  height: 192px;
+  font-style: normal;
+  line-height: 192px;
+  z-index: 1;
+  display: block; }
+
+/* line 13, mainapp/static/css/views/_about.scss */
+.front-about, .front-team, .front-docs, .front-contacts {
+  z-index: 2;
+  height: 35px;
+  line-height: 35px;
+  position: relative;
+  display: block;
+  margin-top: -100px; }
+
+/* line 22, mainapp/static/css/views/_about.scss */
+.about-us-2 {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center; }
+
+/* line 28, mainapp/static/css/views/_about.scss */
+.idea-rest {
+  width: 94px;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: Futura Medium;
+  color: #595A6A;
+  font-weight: 500; }
+
+/* line 37, mainapp/static/css/views/_about.scss */
+.touristic-business {
+  width: 674px;
+  font-style: normal;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  font-size: 18px;
+  font-family: Futura Light;
+  color: #000000;
+  font-weight: 300;
+  margin-right: 10%; }
+
+/* line 46, mainapp/static/css/views/_about.scss */
+.first-image {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center; }
+
+/* line 52, mainapp/static/css/views/_about.scss */
+.quote {
+  padding-left: 20%; }
+
+/* line 56, mainapp/static/css/views/_about.scss */
+.quote p {
+  font: "Philosopher";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 28px;
+  color: #5E6181;
+  width: 436px;
+  margin-top: 100px; }
+
+/* line 67, mainapp/static/css/views/_about.scss */
+.quote span {
+  font: "Futura Light";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: #7A7878; }
+
+/* line 89, mainapp/static/css/views/_about.scss */
+.quote-photo {
+  margin-top: 50px; }
+
+/* line 93, mainapp/static/css/views/_about.scss */
+.about-ideatour {
+  margin-top: 100px;
+  font: "Futura Light";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  width: 475px;
+  padding: 0 10%; }
+
+/* line 104, mainapp/static/css/views/_about.scss */
+.our-managers {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+
+/* line 113, mainapp/static/css/views/_about.scss */
+.our-managers img {
+  flex: 0 1 auto;
+  margin: 20px; }
+
+/* line 118, mainapp/static/css/views/_about.scss */
+.our-managers {
+  padding-left: 20%; }
+
+/* line 122, mainapp/static/css/views/_about.scss */
+.docs-menu {
+  margin-top: 50px;
+  display: flex;
+  height: 78px;
+  background-color: #F7F8F9;
+  float: right;
+  align-items: center;
+  justify-content: space-around;
+  font: "Futura Light";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #4A4A4A; }
+
+/* line 140, mainapp/static/css/views/_about.scss */
+.docs-photos {
+  display: inline-block; }
+
+/* line 1, mainapp/static/css/views/_footer.scss */
+.footer {
+  display: flex;
+  height: auto;
+  padding: 25px 75px;
+  background-color: #5E6181;
+  color: #FFFFFF; }
+  /* line 7, mainapp/static/css/views/_footer.scss */
+  .footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  /* line 12, mainapp/static/css/views/_footer.scss */
+  .footer .footer-container-ul {
+    padding-left: 0px; }
+  /* line 15, mainapp/static/css/views/_footer.scss */
+  .footer h6 {
+    font-family: "Futura Medium";
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase; }
+  /* line 24, mainapp/static/css/views/_footer.scss */
+  .footer .footer-left-side {
+    display: flex; }
+  /* line 27, mainapp/static/css/views/_footer.scss */
+  .footer .footer-left-side a {
+    font-family: "Futura Light";
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+    cursor: pointer; }
+  /* line 37, mainapp/static/css/views/_footer.scss */
+  .footer .footer-left-side a:hover {
+    text-decoration: none;
+    color: #FFFFFF; }
+  /* line 41, mainapp/static/css/views/_footer.scss */
+  .footer .footer-right-upper {
+    display: flex;
+    justify-content: space-between; }
+  /* line 45, mainapp/static/css/views/_footer.scss */
+  .footer .footer-contacts-part-one {
+    display: flex; }
+  /* line 48, mainapp/static/css/views/_footer.scss */
+  .footer .footer-contacts-part-two {
+    display: block; }
+  /* line 51, mainapp/static/css/views/_footer.scss */
+  .footer .foter-social {
+    display: flex;
+    justify-content: space-between; }
+  /* line 55, mainapp/static/css/views/_footer.scss */
+  .footer i {
+    font-size: 25px; }
+  /* line 58, mainapp/static/css/views/_footer.scss */
+  .footer .foter-social img {
+    color: #FFFFFF; }
+  /* line 61, mainapp/static/css/views/_footer.scss */
+  .footer .footer-right-down input {
+    margin-right: -1px; }
+  /* line 64, mainapp/static/css/views/_footer.scss */
+  .footer .footer-right-down input {
+    background-color: rgba(0, 0, 0, 0);
+    color: #BDBDBD;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: solid 0.5px #BDBDBD;
+    margin-right: -4px;
+    margin-left: 30px;
+    font-family: "Futura Light";
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: 0.1em;
+    text-transform: lowercase;
+    padding: 4px 130px 0px 0px; }
+  /* line 81, mainapp/static/css/views/_footer.scss */
+  .footer .footer-right-down input:focus {
+    outline: none; }
+  /* line 84, mainapp/static/css/views/_footer.scss */
+  .footer .footer-logo {
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+    margin-left: 25px; }
+  /* line 90, mainapp/static/css/views/_footer.scss */
+  .footer p {
+    font-size: 12px;
+    font-family: "Futura Light";
+    color: #FFFFFF;
+    font-weight: 300;
+    line-height: 13px; }
+  /* line 94, mainapp/static/css/views/_footer.scss */
+  .footer .footer-addres {
+    font-size: 18px;
+    font-family: "Futura Medium";
+    color: #FFFFFF;
+    font-weight: 500;
+    text-transform: uppercase; }
+  /* line 98, mainapp/static/css/views/_footer.scss */
+  .footer .footer-email {
+    font-size: 18px;
+    font-family: "Futura Medium";
+    color: #FFFFFF;
+    font-weight: 500; }

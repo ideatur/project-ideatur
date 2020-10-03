@@ -1,0 +1,155 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<main class="main">
+    <div class="row">
+        <div class="abous-us col-12">
+            <h2 class="back-about offset-1">About Us</h2>
+            <h3 class="front-about offset-3">Про нас</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="about-us-2 col-5">
+            <p class="idea-rest">твій ідейний відпочинок</p>
+        </div>
+        <div class="about-us-2 col-7">
+            <p class="touristic-business">Туристический бизнес для нас — работа мечты и часть жизни!
+                Мы каждый день продолжаем искать интересные возможности для вашего отдыха,
+                открывать новые направления, придумывать отличные предложения. 
+                Нам просто это нравится!
+                <br></br>
+                С 2006 года мы организовали тысячи первоклассных 
+                туров. Да, нам больше 10 лет и у нас огромный опыт в этом деле. 
+                Мир стремительно меняется, и мы готовы меняться вместе с ним — становиться 
+                быстрее, эффективнее, интереснее.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="first-image col-12">
+            <img src="{{ STATIC_PREFIX }}img/about-photo-album/Rectangle-158.png" alt=""/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="quote col-6">
+            <!-- <p>“</p> -->
+            <p>Мы стремимся стать надежными помощниками туристов и превзойти ожидания клиентов.</p>
+            <span>Хомич Олена, менеджер</span>
+            <!-- <p>“</p> -->
+        </div>
+        <div class="quote-photo col-6">
+            <img src="{{ STATIC_PREFIX }}img/about-photo-album/Rectangle-159.png" alt=""/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="the-team col-12">
+            <h2 class="back-team offset-5">The team</h2>
+            <h3 class="front-team offset-7">Команда</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="our-managers col-3">
+            <img src="{{ STATIC_PREFIX }}img/about-photo-album/Rectangle-160.png" alt=""/>
+            <img src="{{ STATIC_PREFIX }}img/about-photo-album/Rectangle-161.png" alt=""/>
+        </div>
+        <div class="our-managers col-3">
+            <img src="{{ STATIC_PREFIX }}img/about-photo-album/Rectangle-162.png" alt=""/>
+        </div>
+        <div class="about-ideatour col-6">
+            <p>IdeaTour – это сервис поиска и сравнения цен на туры всех основных туроператоров на украинском рынке. 
+            Мы предоставляем туристу возможность забронировать тур онлайн без посещения офиса турагенств.
+            <br></br>
+            Мы стремимся стать надежными помощниками туристов во время путешествий и превзойти ожидания клиентов. 
+            А главная наша задача — предоставление качественных услуг нашим туристам и удовлетворение их потребностей.</p>
+            <div>
+                <div class="main-stat-num">5</div>
+                <div class="main-stat-text">років на ринку туристичних послуг</div>
+            </div>
+            <div>
+                <div class="main-stat-num">32</div>
+                <div class="main-stat-text">туроператори</div>
+            </div>
+            <div>
+                <div class="main-stat-num">10</div>
+                <div class="main-stat-text">тис. задоволених туристів</div>
+            </div>
+            <div>
+                <div class="main-stat-num">45</div>
+                <div class="main-stat-text">країн світу</div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="docs col-12">
+            <h2 class="back-docs offset-1">Documents</h2>
+            <h3 class="front-docs offset-3">Документи</h3>
+        </div>
+    </div>
+    <div class="row">
+        <ul class="docs-menu col-9 offset-3">
+            <li><a href="#">установчі документи</a></li>
+            <li><a href="#">сертифікати</a></li>
+            <li><a href="#">реквізити</a></li>
+            <li><a href="#">банківська гарантія</a></li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="docs-photos col-9 offset-3">
+            <div>
+                <img src="{{ STATIC_PREFIX }}img/about-photo-album/1.png" alt=""/>
+                <br></br>
+                <span>Свідоцтво про державну<br> реєстрацію</span>
+            </div>
+            <div>
+                <img src="{{ STATIC_PREFIX }}img/about-photo-album/2.png" alt=""/>
+                <br></br>
+                <span>Виписка ЄДР</span>
+            </div>
+            <div>
+                <img src="{{ STATIC_PREFIX }}img/about-photo-album/3.png" alt=""/>
+                <br></br>
+                <span>Свідоцтво платника ЄП</span>
+            </div>
+            <div>
+                <img src="{{ STATIC_PREFIX }}img/about-photo-album/4.png" alt=""/>
+                <br></br>
+                <span>Статут</span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="contacts col-12">
+            <h2 class="back-contacts offset-5">Contacts</h2>
+            <h3 class="front-contacts offset-7">Контакти</h3>
+        </div>
+    </div>
+    <div class="row conts">
+        <div class="contacts-image col-12">
+            <img src="{{ STATIC_PREFIX }}img/about-photo-album/Rectangle-168.png" alt=""/>
+        </div>
+        <div class="contacts-info">
+            <div class="social">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-telegram-plane"></i>
+            </div>
+            <div class="adress">
+                <p>адреса</p>
+                <p>соборна 67, рівне</p>
+                <p>Пн-Пт з 10:00 до 19:00</p>
+                <p>Сб з 11:00 до 15:00</p>
+            </div>
+            <div class="phone">
+                <p>телефон</p>
+                <p>0 800 500 505</p>
+                <p>з 09:00 до 22:00 щодня</p>
+            </div>
+            <div class="email">
+                <p>email</p>
+                <p>ideatour@ukr.net</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+{% endblock %}
