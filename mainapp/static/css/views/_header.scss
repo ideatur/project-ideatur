@@ -1,11 +1,26 @@
-.header {
+.header-fluid {
+    display: flex;
+    position: fixed;
+    background-color: $primary-color_1;
+    height: 76px;
+    z-index: 4;
+    top: 0px;
+    transition: all linear 0.5s;
+}
+.my-header {
     display: flex;
     background-color: $primary-color-crystal-clear;
     height: 76px;
     position: relative;
     z-index: 2;
-
-    .part-one, .part-two {
+    transition: all linear 0.5s;
+}
+.serial-header {
+    background-color: $primary-color_1;
+    transition: all linear 0.5s;
+}
+header{
+.part-one, .part-two {
         display: flex;
         align-items: center;
         padding: 0;
@@ -69,6 +84,10 @@
     a {
         text-decoration: none;
         @include font(18px, $font-futura-light, $primary-color_10, 300); 
+    }
+    a:hover {
+        text-decoration: none;
+        color: $primary-color_10;
     } 
     i {
         color: $primary-color_10;

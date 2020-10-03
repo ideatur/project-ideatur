@@ -1,3 +1,8 @@
+main {
+    ul {
+        list-style-type: none;
+    }
+}
 .main-form {
     background-image: url("../img/HERO1.png");
     background-size: cover;
@@ -9,6 +14,27 @@
     text-align: center;
     z-index: 1;
 
+    #search-calendar[type="date"]::-webkit-calendar-picker-indicator {
+        color: transparent;
+        background: none;
+        z-index: 1;
+        cursor: pointer;
+    }
+    input[type="date"]:before {
+        color: transparent;
+        background: none;
+        display: block;
+    }
+    .for-date {
+        position: relative;
+    }
+    .fa-calendar-minus {
+        z-index: 0;
+        position: absolute;
+        right: 10px;
+        top: 45px;
+        color: white;
+    }
     .search-hotel {
         display: block;
         width: 76%;
@@ -30,9 +56,12 @@
         justify-content: space-around;
     }
     .form-buttons {
+        display: flex;
+        justify-content: space-evenly;
         margin: 0 auto;
         padding: 0;
         margin-top: 50px;
+        justify-self: center;
     }
     .form-wrapper label {
         display: block;
@@ -54,9 +83,267 @@
         color: white;
     }
 }
-// .hot-tours {
-//     text-transform: uppercase;
-// }
-// .main-tour-partners{
-//     display: flex;
-// }
+.hot-tours {
+    margin-top: 10%;
+    .hot-tour-title-low {
+        display: block;
+        z-index: 2;
+        margin-top: -6.5%;
+    }
+    .tour-nav {
+        float: right;
+        z-index: 2;
+        margin-right: 3%;
+        margin-top: -3%;
+    }
+    .navigation-list {
+        list-style-type: none;
+        justify-content: space-between;
+    }
+    .navigation-list li {
+        padding: 0px 5px;
+        margin: 0px 5px;
+    }
+    .navigation-list li:hover {
+        background-color: $primary-color_8;
+        color: $primary-color_0;
+    }
+    .main-background {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        z-index: 1;
+        position: relative;
+        padding: 0;
+    }
+    button {
+        z-index: 1;
+        display: block;
+        position: relative;
+        margin: 0 auto;
+    }
+    .hot-tour-fluid {
+        display: block;
+        margin-top: -680px;
+        height: 740px;
+        z-index: 0;
+        background-color: $primary-color_7;
+    }
+    .hot-tour-card {
+        padding: 0;
+        width: 24%;
+        margin-bottom: 110px;
+        .card-picture img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .album-info {
+        background-color: white;
+        padding: 9px;
+        border-radius: 5%;
+        display: block;
+        margin: -57px auto;
+        z-index: 2;
+        position: relative;
+        width: 80%;
+
+        .album-people {
+            display: block;
+            float: right;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        p:nth-child(1) {
+            font-family: $font-futura-medium;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+            color: $primary-color_1;
+        }
+        p:nth-child(2) {
+            font-family: $font-futura-medium;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16.18px;
+            letter-spacing: 10%;
+            color: $primary-color_8;
+        }
+        p:nth-child(3) {
+            font-family: $font-futura-medium;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 18.5px;
+            color: $primary-color_1;
+        }
+        p:nth-child(4) {
+            font-family: $font-futura-medium;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 16.18px;
+            color: $primary-color_1;
+            margin-bottom: 0;
+        }
+        
+    }
+}
+.main-statistics {
+    margin-top: 10%;
+    justify-content: space-between;
+    align-items: center;
+    color: $primary-color_1;
+    padding: 0px 100px;
+    .main-stat-num {
+        font-family: $font-futura-light;
+        font-weight: 300;
+        font-size: 150px;
+        line-height: 165.6px;
+    }
+    .main-stat-text {
+        font-family: $font-futura-light;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 19.8px;
+        letter-spacing: 10%;
+    }
+    .stat-info {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .stat-info:nth-child(1), .stat-info:nth-child(3) {
+        display: flex;
+        align-items: center;
+    }
+}
+.contact-us-main-form {
+    padding: 0;
+    margin-top: 10%;
+    justify-content: flex-end;
+    .contact-us-main-form-picture {
+        display: flex;
+        position: relative;
+        z-index: 1;
+        text-align: right;
+        padding: 0;
+    }
+    .img-in-form{
+        width: 100%;
+    }
+    .contact-us-main-form-example {
+        display: block;
+        position: relative;
+        float: left;
+        background-color: $primary-color_7;
+        padding: 25px 25px 25px 100px;
+        z-index: 2;
+        height: 420px;
+        margin-right: -17%;
+        margin-top: 5%;
+        .contact-us-main-form-title {
+            font-family: $font-philosopher;
+            font-size: 26px;
+            font-weight: 400;
+            line-height: 30px;
+            width: 70%;
+        }
+        .contact-us-main-form-on-easy input {
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: solid 0.5px $primary-color_4;
+            font-family: $font-futura-light;
+            font-weight: 300;
+            line-height: 15.46px;
+            color: $primary-color_11;
+            background-color: $primary-color-crystal-clear;
+            height: 30px;
+            margin-bottom: 15px;
+        }
+        .contact-us-main-form-on-easy select {
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: solid 0.5px $primary-color_4;
+            font-family: $font-futura-light;
+            font-weight: 300;
+            line-height: 15.46px;
+            color: $primary-color_11;
+            background-color: $primary-color-crystal-clear;
+            height: 30px;
+            margin-bottom: 15px;
+            padding-left: 11px;
+        }
+        .contact-us-main-form-on-easy select:focus{
+            outline: none;
+        }
+        .button-main-style-one {
+            margin-top: 25px;
+        }
+        .contact-us-main-form-on-easy input:focus{
+            outline: none;
+        }
+    }
+}
+.main-tour-partners {
+    margin-top: 10%;
+    .main-tour-our-partners-left {
+        border-right: solid 1px $primary-color_4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            font-family: $font-futura-medium;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 20.81px;
+            color: $primary-color_1;
+            text-transform: uppercase;
+        }
+    }
+    .main-tour-our-partners-list {
+        flex-wrap: nowrap;
+        width: 100%;
+        overflow: hidden;
+    }
+    .main-tour-our-partners-list img{
+        display: block;
+        width: 15%;
+        height: auto;
+        margin: 25px;
+        cursor: pointer;
+        filter: grayscale(1);
+    }
+    .main-tour-our-partners-list img{
+        display: block;
+        width: 8%;
+        height: auto;
+        margin: 25px;
+        cursor: pointer;
+        filter: grayscale(1);
+    }
+    .main-tour-our-partners-list img:nth-child(1){
+        filter: grayscale(0);
+    }
+}
+.main-instagram {
+    margin-top: 10%;
+    .main-instagram-titles {
+        display: flex;
+        .insta-title-low {
+            color: white;
+            background-color: $primary-color_8;
+            height: 32px;
+            margin-top: 13%;
+            margin-left: -11.8%;
+        }
+    }
+    .main-instagram-album {
+        display: flex;
+        margin: 5% auto;
+        justify-content: center;
+    }
+    .main-instagram-album img {
+        margin: 0.5%;
+    }
+}

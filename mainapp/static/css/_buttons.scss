@@ -16,13 +16,14 @@
   @include button(18px, $font-futura-light, uppercase, $primary-color_10, $primary-color-crystal-clear, 300, 1px solid $primary-color_10, 9px 29px, none);
 }
 .button-main-style-two:hover {
-  @include button(18px, $font-futura-light, uppercase, $primary-color_10, $primary-color-crystal-clear, 300, 2px solid $primary-color_10, 9px 29px, none);
+  @include button(18px, $font-futura-light, uppercase, $primary-color_10, $primary-color-crystal-clear, 300, 2px solid $primary-color_10, 6.25px 27.5px, none);
+  margin-right: 1px;
 }
 .button-main-style-two:focus {
   @include button(18px, $font-futura-light, uppercase, $primary-color_10, $primary-color-crystal-clear, 300, 0.5px solid $primary-color_10, 9px 29px, none);
 }
 .button-main-style-two:disabled {
-  @include button(18px, $font-futura-light, uppercase, $primary-color_10, $primary-color-crystal-clear, 300, 1px solid $primary-color_10, 9px 29px, none);
+  @include button(18px, $font-futura-light, uppercase, $primary-color_10, $primary-color-crystal-clear, 300, 1px solid $primary-color_10, 8.5px 28.5px, none);
 }
 //footer-btn-main-two
 .footer-button-main-style-one {
