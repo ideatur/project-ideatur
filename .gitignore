@@ -94,3 +94,6 @@ node_modules
 /app/app/static/CACHE
 .idea
 app/app/mail_auth.py
+/ideatur/__pycache__
+/mainapp/__pycache__
+/mainapp/migrations/__pycache__
