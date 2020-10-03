@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block content %}
+<main>
+    <h2>All tours</h2>
+    {% if show_all %}
+        <div class="container col-12">
+            {% for tour in show_all %}
+            <div class="container">
+                <div class="row tour-list-card col-12">
+                    <div class="tour-list-img col-2">
+                        <img src="{{ tour.tour_photo.url }}" class="tour-list-img-setting">
+                    </div>
+                    <div class="col-10">
+                        <div class="row col-12 card-titles">
+                            <p class="tour-list-title">{{ tour.title }}</p>
+                            <p class="tout-list-location"><i class="fas fa-map-marker-alt"></i> {{ tour.country }}, {{ tour.city }}</p>
+                            <p class="tout-list-promo">Оплати лише 15% і тур твій!</p>
+                        </div>
+                        <div class="row col-12">
+                            <div class="col-3">
+                                <div><i class="fab fa-avianex ml-1"></i></div>
+                            </div>
+                            <div class="col-3">
+                                <p>номер {{ tour.rooms_class }}</p>
+                                <p>on inclusive</p>
+                                <p>трансфер</p>
+                                <p>страховка</p>
+                            </div>
+                            <div class="col-3">
+                                <p>З аеропорту: {{ tour.airport_from }}</p>
+                                <p>До: {{ tour.to_airport }}</p>
+                            </div>
+                            <div class="col-3">
+                                <p>{{tour.price}} ₴</p>
+                                <p>кількість персон: {{tour.persons}}</p>
+                                <button class="button-main-style-one" name="online-booking">Бронювання онлайн</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+</main>
+{% endblock %}

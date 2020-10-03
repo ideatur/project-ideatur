@@ -2,6 +2,9 @@ main {
     ul {
         list-style-type: none;
     }
+    label {
+        display: none;
+    }
 }
 .main-form {
     background-image: url("../img/HERO1.png");
@@ -67,11 +70,11 @@ main {
         display: block;
         color: white;
     }
-    .form-div, .form-div input {
+    .form-div, .form-div input, .form-div select {
         padding: 0;
         margin: 0;
     }
-    .form-div input {
+    .form-div input, .form-div select {
         height: 40px;
         background-color: rgba(255,255,255, 0);
         border: none;
@@ -81,6 +84,28 @@ main {
     }
     .form-div input::placeholder {
         color: white;
+    }
+    .form-div select::placeholder {
+        color: white;
+    }
+    .form-div select {
+        background-color: $primary-color-crystal-clear;
+        text-align: center;
+    }
+    .form-div option {
+        background-color: $primary-color-crystal-clear;
+        color: black;
+        text-align: center;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+    -moz-appearance: textfield;
     }
 }
 .hot-tours {
@@ -273,6 +298,7 @@ main {
             height: 30px;
             margin-bottom: 15px;
             padding-left: 11px;
+            overflow: hidden;
         }
         .contact-us-main-form-on-easy select:focus{
             outline: none;
@@ -282,6 +308,9 @@ main {
         }
         .contact-us-main-form-on-easy input:focus{
             outline: none;
+        }
+        .contact-us-main-form-on-easy option:nth-child(1) {
+            display: none;
         }
     }
 }

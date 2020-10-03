@@ -18,3 +18,32 @@ article p {
   margin: 0px 15px;
   cursor: pointer;
 }
+.tour-list-card {
+  padding: 5px;
+  margin: 5px;
+  background-color: $primary-color_7;
+  border-radius: 5px;
+}
+.tour-list-img-setting {
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+.card-titles {
+  .tout-list-location, .tout-list-promo{
+    color: $primary-color_8;
+  }
+  justify-content: space-evenly;
+  color: $primary-color_1;
+}
+.hot-tour-mark {
+  display: block;
+  position: relative;
+  z-index: 2;
+  margin-top: -120%;
+  background-color: $primary-color_8;
+  color: $primary-color_10;
+  padding: 0px 3px;
+  text-align: center;
+  text-transform: uppercase;
+}

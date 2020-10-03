@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import NewTour
 
-# Register your models here.
+
+admin.site.register(NewTour)

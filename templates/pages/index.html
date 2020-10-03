@@ -5,35 +5,44 @@
 <main>
     <div class="main-form col-12">
         <h1 class="form-title">Топ-10 найкращих сімейних готелів Єгипту →</h1>
-        <form class="search-hotel">
+        <form method="get"class="search-hotel" action="{% url 'search_tour' %}">
+            {% csrf_token %}
             <div class="form-wrapper">
                 <div class="form-div">
                     <label>Країна, місто, готель</label>
-                    <input type="text" name="country" placeholder="Туреччина">
+                    <select type="text" name="destination-country">
+                        <option value="Turkey-Ankara-Alladin">Турція Анкара Alladin</option>
+                        <option value="USA-Boston-Hilton">США Бостон Hilton</option>
+                        <option value="USA-Las-Vegas-Nevada">США Лас Вегас Nevada</option>
+                        <option value="USA-New-York-Continental">США Нью Йорк Continental</option>
+                    </select>
                 </div>
                 <div class="form-div">
                     <label>Місто вильоту</label>
-                    <input type="text" name="country" placeholder="">
+                    <select type="text" name="airports">
+                        <option value="kyiv-zhy">Київ (Жуляни)</option>
+                        <option value="kyiv-bor">Київ (Бориспіль)</option>
+                    </select>
                 </div>
                 <div class="form-div for-date">
                     <label>Дата вильоту</label>
-                    <input type="date" name="country" value="2020-01-01"
+                    <input type="date" name="flight-date" value="2020-01-01"
                             max="2030-01-01" min="2020-01-01" class="form-date" id="search-calendar">
                     <i class="far fa-calendar-minus"></i>
                 </div>
                 <div class="form-div">
                 <label>Кількість ночей</label>
-                    <input type="text" name="country" placeholder="">
+                    <input type="number" name="nights" placeholder="" min="1" max="10" maxlength="2">
                 </div>
 
                 <div class="form-div">
                     <label>Кількість осіб</label>
-                    <input type="text" name="country" placeholder="">
+                    <input type="number" name="people" placeholder="" min="1" max="10" maxlength="2">
                 </div>
             </div>
             <div class="form-buttons col-8">
                 <button class="button-main-style-two">Розширений пошук</button>
-                <button class="button-main-style-one">Знайти тури</button>
+                <button class="button-main-style-one" name="lets_search">Знайти тури</button>
             </div>
         </form>
     </div>
@@ -203,18 +212,10 @@
             <article>
                 <p class="contact-us-main-form-title">Немає часу на самостійні пошуки?</p>
                 <p>Наші менеджери зроблять це для вас бекоштовно!<br>Заповніть заявку на підбір туру!</p>
-                <form class="contact-us-main-form-on-easy">
-                    <input type="text" placeholder="Ім'я" onfocus="this.value=''" class="col-10"/>
-                    <input type="text" placeholder="Телефн" onfocus="this.value=''" class="col-10"/>
-                    <!-- <label name="comunication">Спосіб комунікації</label> -->
-                    <select type="text" class="col-10">
-                        <option disabled selected value="Спосіб комунікації" class="disabled-option"> Спосіб комунікації</option>
-                        <option>Дзвінок</option>
-                        <option>Viber</option>
-                        <option>Wat's up</option>
-                        <option>Telegram</option>
-                    </select>
-                    <button class="button-main-style-one">підібрати тур</button>
+                <form method = "POST" class="contact-us-main-form-on-easy">
+                    {% csrf_token %}
+                    {{ form }}
+                    <button type="submit" class="button-main-style-one">підібрати тур</button>
                 </form>
             </article>
         </div>

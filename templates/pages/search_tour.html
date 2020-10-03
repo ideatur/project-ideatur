@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main>
+    <h2>Searching results:</h2>
+    {% if search_list %}
+        <div class="container col-12">
+            {% for tour in search_list %}
+            <div class="container col-5">
+                <p>назва туру: {{ tour.title }}</p>
+                <p>країна: {{ tour.country }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+</main>
+
+{% endblock %}
